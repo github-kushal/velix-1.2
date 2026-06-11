@@ -27,6 +27,6 @@ VOICE_RATE = int(os.getenv("VOICE_RATE", 170))
 
 VOICE_VOLUME = float(os.getenv("VOICE_VOLUME", 1.0))
 
-DEBUG = os.getenv("DEBUG", "True") == "True"
+DEBUG = os.getenv("DEBUG", "True") == "False"
 
-LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
+LOG_LEVEL = os.getenv("LOG_LEVEL", "DEBUG")

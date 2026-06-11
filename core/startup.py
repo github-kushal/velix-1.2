@@ -1,34 +1,16 @@
+def initialize_logger():
+   from utils.logger import logger as log
+   log.log_info("Startup", "The logger initialized now.")
+
+   
 def load_environment():
 
-    from dotenv import load_dotenv
-    import os
-
-    load_dotenv(dotenv_path="docs\.env")
-
-    ASSISTANT_NAME = os.getenv("ASSISTANT_NAME", "VELIX")
-
-    WAKE_WORD = os.getenv("WAKE_WORD", "velix")
-
-    USER_NAME = os.getenv("USER_NAME", "")
-
-    OLLAMA_HOST = os.getenv(
-        "OLLAMA_HOST",
-        "http://localhost:11434"
-    )
-
-    OLLAMA_MODEL = os.getenv(
-        "OLLAMA_MODEL",
-        "qwen3:8b"
-    )
-
-    VOICE_RATE = int(os.getenv("VOICE_RATE", 170))
-
-    VOICE_VOLUME = float(os.getenv("VOICE_VOLUME", 1.0))
-
-    DEBUG = os.getenv("DEBUG", "True") == "True"
-
-    LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
-
-    print(ASSISTANT_NAME, WAKE_WORD, USER_NAME, OLLAMA_HOST, OLLAMA_MODEL, VOICE_RATE, VOICE_VOLUME, DEBUG, LOG_LEVEL)
-
-load_environment()
+   import config 
+   assistant_name = config.ASSISTANT_NAME
+   wake_word = config.WAKE_WORD
+   ollama_host = config.OLLAMA_HOST
+   ollama_model = config.OLLAMA_MODEL
+   voice_rate = config.VOICE_RATE
+   voice_volume = config.VOICE_VOLUME
+   debug = config.DEBUG
+   log_level = config.LOG_LEVEL
