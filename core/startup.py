@@ -5,7 +5,7 @@ def initialize_logger():
    
 def load_environment():
 
-   import config 
+   import docs.config as config 
    assistant_name = config.ASSISTANT_NAME
    wake_word = config.WAKE_WORD
    ollama_host = config.OLLAMA_HOST
