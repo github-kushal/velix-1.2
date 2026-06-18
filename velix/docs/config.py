@@ -30,3 +30,7 @@ VOICE_VOLUME = float(os.getenv("VOICE_VOLUME", 1.0))
 DEBUG = os.getenv("DEBUG", "True") == "False"
 
 LOG_LEVEL = os.getenv("LOG_LEVEL", "DEBUG")
+
+EMAIL = os.getenv("EMAIL")
+
+EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")

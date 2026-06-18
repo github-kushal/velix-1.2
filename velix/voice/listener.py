@@ -1,12 +1,6 @@
 import speech_recognition as sr
-import pyttsx3
 
 class Listener:
-    def speak(text):
-        """Convert text to speech using pyttsx3."""
-        engine = pyttsx3.init()
-        engine.say(text)
-        engine.runAndWait()
 
     def listen():
         """Listen to microphone input and return recognized text."""
@@ -15,6 +9,7 @@ class Listener:
 
         with mic as source:
             recognizer.adjust_for_ambient_noise(source, duration=1)
+            recognizer.dynamic_energy_threshold = True
             print("Listening... ")
             try:
                 audio = recognizer.listen(source, timeout=5, phrase_time_limit=10)
