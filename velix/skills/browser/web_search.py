@@ -10,5 +10,5 @@ class WebSearch:
     def open_youtube():
         webbrowser.open("https://www.youtube.com")
 
-    def open_youtube(query):
+    def search_youtube(query):
         webbrowser.open(f"https://www.youtube.com/results?search_query={query}")

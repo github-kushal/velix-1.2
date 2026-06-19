@@ -1,5 +1,5 @@
 import pyttsx3
-import docs.config as config
+from docs import config
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty("voices")
@@ -13,4 +13,4 @@ def speak(query):
     engine.say(query)
     engine.runAndWait()
 
-speak("Hello, this is velix speaking")
+# speak("Hello, this is velix speaking")
