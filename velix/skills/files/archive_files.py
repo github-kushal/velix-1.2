@@ -34,6 +34,3 @@ def extract_zip(file_path):
                 print(file)
     except Exception as e:
         print(e)
-
-# zip_file("E:\\Velix-1.2\\velix\\skills\\browser", "E:\\Velix-1.2\\velix\\skills\\browser.zip")
-# extract_zip("E:\\Velix-1.2\\velix\\skills\\browser.zip")
