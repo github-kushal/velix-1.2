@@ -1,7 +1,7 @@
 import pygame
 import os
 
-class LocalMusic:
+class Audio:
     def __init__(self):
         pygame.mixer.init()
         print("Audio player initialized.")
@@ -37,17 +37,12 @@ class LocalMusic:
         pygame.mixer.music.stop()
         print("Playback stopped.")
 
+    def online_music(self, song : str):
+        # Disable OAuthlib's HTTPS verification when running locally.
+        # *DO NOT* leave this option enabled in production.
+        import webbrowser
+        song.replace(" ", "%20")
+        webbrowser.open(f"https://open.spotify.com/search/{song}")
 
-class OnlineMusic:
-    import spotipy
-    from spotipy.oauth2 import SpotifyOAuth
 
-    s_list = ["user-library-modify", "user-read-playback-position", "user-top-read", "user-read-recently-played", "playlist-modify-private", "playlist-modify-public", "app-remote-control", "streaming"]
-
-    sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id="07f0aed99984405895de4b21283b3e05",
-                                                   client_secret="ff56d648d0cc4ab39cd4831317db0d50",
-                                                   redirect_uri="http://127.0.0.1:8888/callback",
-                                                   scope=s_list))
     
-    res = sp.current_user_playlists(limit=20)
-
