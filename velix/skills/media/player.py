@@ -1,29 +1,52 @@
+# pyrefly: ignore [missing-import]
 import pygame
 import os
+import json
+import time
 
 class Audio:
     def __init__(self):
         pygame.mixer.init()
         print("Audio player initialized.")
+        self.paths = []
+
+    def load_json(self):
+        with open("sample.json", "r") as files:
+            lines = json.load(files)
+        for i in range(0, len(lines)):
+            self.paths.append(lines[i])
+        return self.paths
 
 
-    def load_file(self, file_p):
-        # self.file_p = input("Please enter the file path: ")
+    def play_music(self, play_forever=False):
+        self.load_json()
+        pygame.mixer.init()
+        tracks = self.paths
+        valid_tracks = [track['file'] for track in tracks if os.path.exists(track['file'])]
 
-        if not os.path.isfile(file_p):
-            raise FileNotFoundError(f"{file_p} not found on its path.")
-        pygame.mixer.music.load(file_p)
-        print(f"Loaded file: {file_p}")
-        return file_p
+        try:
+            while True:
+                for track in valid_tracks:
+                    try:
+                        print(f"Current playing song is : {os.path.basename(track)}")
+                        pygame.mixer.music.load(track)
+                        pygame.mixer.music.play()
 
-    def play_music(self):
-        pygame.mixer.music.play()
-        print("Playback started.")
+                        while pygame.mixer.music.get_busy():
+                            time.sleep(0.1)
+                            
+                    except pygame.error as e:
+                        raise f"Error playing song {track} : {e} "
 
-    def get_duration(self):
-        import time
-        while pygame.mixer.music.get_busy():
-            time.sleep(0.1)
+                if not play_forever:
+                    break
+                    
+                
+        except KeyboardInterrupt:
+            print("user stopped manually")  
+        finally:
+            pygame.mixer.music.stop()
+            pygame.mixer.quit()
 
     def pause_music(self):
         pygame.mixer.music.pause()
@@ -44,5 +67,7 @@ class Audio:
         song.replace(" ", "%20")
         webbrowser.open(f"https://open.spotify.com/search/{song}")
 
-
     
+
+l = Audio()
+l.play_music()

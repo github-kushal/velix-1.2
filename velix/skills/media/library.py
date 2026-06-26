@@ -32,14 +32,15 @@ class Library:
 
 
 import json
+
 def json_list():
     lib = Library()
     files = lib.scan_music_folder()
-    with open("sample.json", "w") as outfile:
-        d = {}
-        for idx, fl in enumerate(files):
-            idx = idx + 1
-            d[idx] = fl
-        json.dump(d, outfile, indent=1)
+    records = []
+    for file in files:
+        records.append({"file" : file})
+    print(records)
+    with open("sample.json", "w", encoding="utf-8") as path:
+        json.dump(records, path, indent=4)
 
 json_list()
