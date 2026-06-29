@@ -12,4 +12,4 @@ def take_ss():
         raise e
     
 
-open_camera()
+# open_camera()
