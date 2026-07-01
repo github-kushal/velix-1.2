@@ -77,6 +77,24 @@ python main.py
 
 ---
 
+
+## Integration of Ollama models as per roles
+
+Task	   			 Model
+--------------------------------------------
+General assistant		Qwen3 4B
+
+Coding help			Qwen3 8B
+
+Long conversations		Gemma 3 4B
+
+Fast commands			Phi-4 Mini
+
+Offline fallback		Llama 3.2 3B
+
+
+---
+
 ## Future Goals
 
 * Vision Module
@@ -86,8 +104,6 @@ python main.py
 * Smart Home Integration
 
 * Robotics
-
-* Multi-Agent System
 
 * Custom Fine-Tuned LLM
 
