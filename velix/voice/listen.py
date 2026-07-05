@@ -1,5 +1,5 @@
-from .microphone import Microphone
-from .transcriber import Transcriber
+from microphone import Microphone
+from transcriber import Transcriber
 import time
 
 def listen():
