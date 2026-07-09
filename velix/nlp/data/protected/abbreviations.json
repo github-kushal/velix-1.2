@@ -1,0 +1,23 @@
+[
+    "cpu",
+    "gpu",
+    "ram",
+    "rom",
+    "ssd",
+    "hdd",
+    "usb",
+    "wifi",
+    "bluetooth",
+    "vpn",
+    "api",
+    "sdk",
+    "cli",
+    "gui",
+    "dns",
+    "ip",
+    "url",
+    "pdf",
+    "otp",
+    "upi",
+    "sms"
+]
