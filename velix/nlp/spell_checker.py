@@ -2,7 +2,9 @@ import os
 import glob
 import json
 import importlib.resources as imp_res
-
+import re
+import math
+from difflib import SequenceMatcher
 from symspellpy import SymSpell, Verbosity
 
 
@@ -21,6 +23,9 @@ class SpellChecker:
         self._load_custom_dictionary()
         self._load_symspell_dictionaries()
 
+        self.correct_word("opne")
+
+
     # ------------------------------------------------------------------
     # Public Methods
     # ------------------------------------------------------------------
@@ -31,25 +36,35 @@ class SpellChecker:
         """
 
         try:
-            # Skip protected words
-            if self._is_protected(word):
+            # Skip protected words and special tokens
+            if (
+                self._is_protected(word)
+                or self._word_exists(word)
+                or self._is_number(word)
+                or self._is_url(word)
+                or self._is_email(word)
+                or self._is_file_path(word)
+                or self._is_acronym(word)
+            ):
                 return word
+            
 
-            # Skip correctly spelled words
-            if self._word_exists(word):
-                return word
+            else:
+                print(f"Words : {word}")
+                suggestions = self.sym_spell.lookup(
+                    word,
+                    Verbosity.TOP,
+                    max_edit_distance=2
+                )
 
-            suggestions = self.sym_spell.lookup(
-                word,
-                Verbosity.CLOSEST,
-                max_edit_distance=2
-            )
 
-            if suggestions:
-                # Return the best suggestion
-                return suggestions[0].term
+                best_suggestion = suggestions[0]
+                # print(f"Suggestions : {best_suggestion}")
 
-            return word
+                if best_suggestion:
+                    return best_suggestion.term
+
+                # return word
 
         except Exception as e:
             raise e
@@ -145,3 +160,52 @@ class SpellChecker:
         """
 
         return word.lower() in self.sym_spell.words
+
+    def _is_number(self, word: str) -> bool:
+        """
+        Returns True if the token is a numeric value.
+        """
+
+        return bool(re.fullmatch(r"-?\d+(?:\.\d+)?", word.strip()))
+
+    def _is_url(self, word: str) -> bool:
+        """
+        Returns True if the token looks like a URL.
+        """
+
+        return bool(re.fullmatch(r"https?://\S+", word.strip(), re.IGNORECASE))
+
+    def _is_email(self, word: str) -> bool:
+        """
+        Returns True if the token looks like an email address.
+        """
+
+        return bool(re.fullmatch(r"[^@\s]+@[^@\s]+\.[^@\s]+", word.strip()))
+
+    def _is_file_path(self, word: str) -> bool:
+        """
+        Returns True if the token looks like a file path.
+        """
+
+        normalized = word.strip()
+
+        if not normalized:
+            return False
+
+        has_separator = "/" in normalized or "\\" in normalized
+        has_drive_prefix = bool(re.match(r"^[A-Za-z]:[\\/]", normalized))
+        is_relative = normalized.startswith(("./", ".\\", "../", "..\\"))
+        has_extension = bool(re.search(r"\.[A-Za-z0-9]{1,10}$", normalized))
+
+        return has_separator or has_drive_prefix or is_relative or has_extension
+
+    def _is_acronym(self, word: str) -> bool:
+        """
+        Returns True if the token is an uppercase acronym.
+        """
+
+        return bool(re.fullmatch(r"[A-Z]{2,}", word.strip()))
+    
+    
+
+SpellChecker()
