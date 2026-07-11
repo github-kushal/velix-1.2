@@ -1,0 +1,13 @@
+{
+    "open application": "OPEN_APPLICATION",
+    "launch application": "OPEN_APPLICATION",
+    "start application": "OPEN_APPLICATION",
+    "run application": "OPEN_APPLICATION",
+    "close application": "CLOSE_APPLICATION",
+    "exit application": "CLOSE_APPLICATION",
+    "quit application": "CLOSE_APPLICATION",
+    "restart application": "RESTART_APPLICATION",
+    "minimize window": "MINIMIZE_WINDOW",
+    "maximize window": "MAXIMIZE_WINDOW",
+    "restore window": "RESTORE_WINDOW"
+}

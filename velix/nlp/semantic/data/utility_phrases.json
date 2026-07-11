@@ -1,0 +1,9 @@
+{
+    "calculate": "CALCULATE",
+    "convert units": "UNIT_CONVERSION",
+    "translate": "TRANSLATE",
+    "tell time": "GET_TIME",
+    "tell date": "GET_DATE",
+    "check weather": "GET_WEATHER",
+    "show weather": "GET_WEATHER"
+}

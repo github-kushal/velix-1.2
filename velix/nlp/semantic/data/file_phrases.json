@@ -1,0 +1,14 @@
+{
+    "create folder": "CREATE_FOLDER",
+    "create file": "CREATE_FILE",
+    "delete file": "DELETE_FILE",
+    "delete folder": "DELETE_FOLDER",
+    "rename file": "RENAME_FILE",
+    "rename folder": "RENAME_FOLDER",
+    "copy file": "COPY_FILE",
+    "move file": "MOVE_FILE",
+    "cut file": "CUT_FILE",
+    "paste file": "PASTE_FILE",
+    "compress folder": "ZIP_FOLDER",
+    "extract archive": "UNZIP_FOLDER"
+}

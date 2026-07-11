@@ -1,0 +1,14 @@
+{
+    "open browser": "OPEN_BROWSER",
+    "close browser": "CLOSE_BROWSER",
+    "new tab": "NEW_TAB",
+    "close tab": "CLOSE_TAB",
+    "new window": "NEW_WINDOW",
+    "close window": "CLOSE_WINDOW",
+    "reload page": "REFRESH_PAGE",
+    "refresh page": "REFRESH_PAGE",
+    "go back": "GO_BACK",
+    "go forward": "GO_FORWARD",
+    "clear history": "CLEAR_HISTORY",
+    "clear cache": "CLEAR_CACHE"
+}

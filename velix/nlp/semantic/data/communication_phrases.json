@@ -1,0 +1,10 @@
+{
+    "send email": "SEND_EMAIL",
+    "read email": "READ_EMAIL",
+    "compose email": "COMPOSE_EMAIL",
+    "send message": "SEND_MESSAGE",
+    "reply message": "REPLY_MESSAGE",
+    "make call": "MAKE_CALL",
+    "answer call": "ANSWER_CALL",
+    "reject call": "REJECT_CALL"
+}
