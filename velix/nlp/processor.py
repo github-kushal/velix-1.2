@@ -5,7 +5,10 @@ from NLPState import NLPState
 from velix.nlp.preprocessing.normalizer import TextPreProcessor as tpp
 from velix.nlp.preprocessing.tokenizer import tokenizer
 from velix.nlp.preprocessing.lemmatizer import lemmatizer
+from velix.nlp.preprocessing.lemmatizer import pos_tagger
+from velix.nlp.preprocessing.lemmatizer import ner
 from velix.nlp.correction.spell_checker import SpellChecker
+from velix.nlp.parsing.dependency_parser import dependency_parser
 
 
 
@@ -40,6 +43,9 @@ class Process:
 
         state.tokens = tokenizer(doc)
         state.lemmas = lemmatizer(doc)
+        state.pos_tags = pos_tagger(doc)
+        state.entities = ner(doc)
+        state.dependencies = dependency_parser(doc)
 
         return state
         
