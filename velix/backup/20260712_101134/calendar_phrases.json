@@ -1,0 +1,7 @@
+{
+    "create event": "CREATE_EVENT",
+    "schedule meeting": "CREATE_MEETING",
+    "cancel meeting": "DELETE_MEETING",
+    "show calendar": "SHOW_CALENDAR",
+    "what's on my calendar": "SHOW_CALENDAR"
+}

@@ -1,7 +1,32 @@
 {
-    "create event": "CREATE_EVENT",
-    "schedule meeting": "CREATE_MEETING",
-    "cancel meeting": "DELETE_MEETING",
-    "show calendar": "SHOW_CALENDAR",
-    "what's on my calendar": "SHOW_CALENDAR"
+    "create event": {
+        "canonical": "create event",
+        "category": "calendar",
+        "priority": 1,
+        "description": "create event"
+    },
+    "schedule meeting": {
+        "canonical": "schedule meeting",
+        "category": "calendar",
+        "priority": 1,
+        "description": "schedule meeting"
+    },
+    "cancel meeting": {
+        "canonical": "cancel meeting",
+        "category": "calendar",
+        "priority": 1,
+        "description": "cancel meeting"
+    },
+    "show calendar": {
+        "canonical": "show calendar",
+        "category": "calendar",
+        "priority": 1,
+        "description": "show calendar"
+    },
+    "what's on my calendar": {
+        "canonical": "what's on my calendar",
+        "category": "calendar",
+        "priority": 1,
+        "description": "what's on my calendar"
+    }
 }

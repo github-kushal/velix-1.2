@@ -1,9 +1,44 @@
-{
-    "calculate": "CALCULATE",
-    "convert units": "UNIT_CONVERSION",
-    "translate": "TRANSLATE",
-    "tell time": "GET_TIME",
-    "tell date": "GET_DATE",
-    "check weather": "GET_WEATHER",
-    "show weather": "GET_WEATHER"
-}
+[
+    {
+        "canonical": "calculate",
+        "category": "CALCULATE",
+        "priority": 1,
+        "description": "calculate"
+    },
+    {
+        "canonical": "convert units",
+        "category": "UNIT_CONVERSION",
+        "priority": 1,
+        "description": "convert units"
+    },
+    {
+        "canonical": "translate",
+        "category": "TRANSLATE",
+        "priority": 1,
+        "description": "translate"
+    },
+    {
+        "canonical": "tell time",
+        "category": "GET_TIME",
+        "priority": 1,
+        "description": "tell time"
+    },
+    {
+        "canonical": "tell date",
+        "category": "GET_DATE",
+        "priority": 1,
+        "description": "tell date"
+    },
+    {
+        "canonical": "check weather",
+        "category": "GET_WEATHER",
+        "priority": 1,
+        "description": "check weather"
+    },
+    {
+        "canonical": "show weather",
+        "category": "GET_WEATHER",
+        "priority": 1,
+        "description": "show weather"
+    }
+]

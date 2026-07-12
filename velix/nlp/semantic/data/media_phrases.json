@@ -1,12 +1,62 @@
-{
-    "play music": "PLAY_MUSIC",
-    "pause music": "PAUSE_MUSIC",
-    "resume music": "RESUME_MUSIC",
-    "stop music": "STOP_MUSIC",
-    "next song": "NEXT_TRACK",
-    "previous song": "PREVIOUS_TRACK",
-    "increase volume": "VOLUME_UP",
-    "decrease volume": "VOLUME_DOWN",
-    "mute audio": "MUTE_AUDIO",
-    "unmute audio": "UNMUTE_AUDIO"
-}
+[
+    {
+        "canonical": "PLAY_MUSIC",
+        "category": "music control",
+        "priority": 1,
+        "description": "play music"
+    },
+    {
+        "canonical": "PAUSE_MUSIC",
+        "category": "music control",
+        "priority": 1,
+        "description": "pause music"
+    },
+    {
+        "canonical": "RESUME_MUSIC",
+        "category": "music control",
+        "priority": 1,
+        "description": "resume music"
+    },
+    {
+        "canonical": "STOP_MUSIC",
+        "category": "music control",
+        "priority": 1,
+        "description": "stop music"
+    },
+    {
+        "canonical": "NEXT_TRACK",
+        "category": "music control",
+        "priority": 1,
+        "description": "next song"
+    },
+    {
+        "canonical": "PREVIOUS_TRACK",
+        "category": "music control",
+        "priority": 1,
+        "description": "previous song"
+    },
+    {
+        "canonical": "VOLUME_UP",
+        "category": "music control",
+        "priority": 1,
+        "description": "increase volume"
+    },
+    {
+        "canonical": "VOLUME_DOWN",
+        "category": "music control",
+        "priority": 1,
+        "description": "decrease volume"
+    },
+    {
+        "canonical": "MUTE_AUDIO",
+        "category": "music control",
+        "priority": 1,
+        "description": "mute audio"
+    },
+    {
+        "canonical": "UNMUTE_AUDIO",
+        "category": "music control",
+        "priority": 1,
+        "description": "unmute audio"
+    }
+]

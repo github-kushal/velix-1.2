@@ -1,0 +1,6 @@
+{
+    "set reminder": "CREATE_REMINDER",
+    "remove reminder": "DELETE_REMINDER",
+    "show reminders": "SHOW_REMINDERS",
+    "edit reminder": "EDIT_REMINDER"
+}

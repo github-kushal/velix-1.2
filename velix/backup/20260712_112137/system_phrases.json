@@ -1,0 +1,17 @@
+{
+    "shutdown computer": "SYSTEM_SHUTDOWN",
+    "restart computer": "SYSTEM_RESTART",
+    "sleep computer": "SYSTEM_SLEEP",
+    "lock computer": "LOCK_SYSTEM",
+    "log off": "LOGOFF_SYSTEM",
+    "increase volume": "VOLUME_UP",
+    "decrease volume": "VOLUME_DOWN",
+    "mute volume": "MUTE_VOLUME",
+    "unmute volume": "UNMUTE_VOLUME",
+    "increase brightness": "BRIGHTNESS_UP",
+    "decrease brightness": "BRIGHTNESS_DOWN",
+    "turn on wifi": "WIFI_ON",
+    "turn off wifi": "WIFI_OFF",
+    "enable bluetooth": "BLUETOOTH_ON",
+    "disable bluetooth": "BLUETOOTH_OFF"
+}

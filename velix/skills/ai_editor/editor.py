@@ -193,26 +193,29 @@ class AIEditor:
         return self.llm.ping()
     
 if __name__ == "__main__":
+    files = ["browser_phrases.json", "calendar_phrases.json", "communication_phrases.json", "file_phrases.json", "media_phrases.json", "phrasal_verbs.json", "reminder_phrases.json", "search_phrases.json", "system_phrases.json", "utility_phrases.json", "web_phrases.json"]
     ae = AIEditor()
-    response = ae.edit_file(
-        file_path=Path("E:\\Velix-1.2\\velix\\nlp\\semantic\\data\\application_phrases.json"),
+    for file in files:
+        response = ae.edit_file(
+        file_path=Path(f"E:\\Velix-1.2\\velix\\nlp\\semantic\\data\\{file}"),
         instruction="""
-Upgrade this JSON to the new semantic schema.
+        Upgrade this JSON to the new semantic schema.
 
-Requirements:
-- Convert every phrase into an object.
-- Include:
-    canonical
-    category
-    priority
-    description
-- Preserve every existing phrase.
-- Return only valid JSON.
-""",
-    )
-    print(response)
+        Requirements:
+        - Convert every phrase into an object.
+        - Include:
+            canonical
+            category
+            priority
+            description
+        - Preserve every existing phrase.
+        - Return only valid JSON.
+        """,
+            )
+    # print(response)
 
     if response.success:
         print("Success!")
     else:
         print(response.message)
+

@@ -1,0 +1,9 @@
+{
+    "search for": "SEARCH",
+    "find": "SEARCH",
+    "look for": "SEARCH",
+    "search online": "WEB_SEARCH",
+    "search google": "GOOGLE_SEARCH",
+    "search youtube": "YOUTUBE_SEARCH",
+    "search wikipedia": "WIKIPEDIA_SEARCH"
+}

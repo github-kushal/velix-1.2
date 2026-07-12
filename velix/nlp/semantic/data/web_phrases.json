@@ -1,8 +1,38 @@
 {
-    "open website": "OPEN_WEBSITE",
-    "visit website": "OPEN_WEBSITE",
-    "download file": "DOWNLOAD_FILE",
-    "upload file": "UPLOAD_FILE",
-    "open link": "OPEN_LINK",
-    "copy link": "COPY_LINK"
+    "open website": {
+        "canonical": "open website",
+        "category": "Navigation",
+        "priority": 1,
+        "description": "open website"
+    },
+    "visit website": {
+        "canonical": "visit website",
+        "category": "Navigation",
+        "priority": 1,
+        "description": "visit website"
+    },
+    "download file": {
+        "canonical": "download file",
+        "category": "File Management",
+        "priority": 1,
+        "description": "download file"
+    },
+    "upload file": {
+        "canonical": "upload file",
+        "category": "File Management",
+        "priority": 1,
+        "description": "upload file"
+    },
+    "open link": {
+        "canonical": "open link",
+        "category": "Navigation",
+        "priority": 1,
+        "description": "open link"
+    },
+    "copy link": {
+        "canonical": "copy link",
+        "category": "Clipboard",
+        "priority": 1,
+        "description": "copy link"
+    }
 }

@@ -31,6 +31,7 @@ class LLMClient:
             system=system,
             options={
                 "temperature": temperature,
+                "num_gpu": 0,
             },
         )
 

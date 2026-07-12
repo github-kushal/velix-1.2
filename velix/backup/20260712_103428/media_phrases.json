@@ -1,0 +1,12 @@
+{
+    "play music": "PLAY_MUSIC",
+    "pause music": "PAUSE_MUSIC",
+    "resume music": "RESUME_MUSIC",
+    "stop music": "STOP_MUSIC",
+    "next song": "NEXT_TRACK",
+    "previous song": "PREVIOUS_TRACK",
+    "increase volume": "VOLUME_UP",
+    "decrease volume": "VOLUME_DOWN",
+    "mute audio": "MUTE_AUDIO",
+    "unmute audio": "UNMUTE_AUDIO"
+}
