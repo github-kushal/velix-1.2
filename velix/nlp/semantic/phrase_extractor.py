@@ -43,9 +43,9 @@ class PhraseExtractor:
         try:
             matcher = Matcher(nlp.vocab)
             for phrase, patterns in self.phrase_dict.items():
-                print(phrase, [patterns])
+                # print(phrase, [patterns])
                 matcher.add(phrase, [patterns])
-            print(matcher)
+            # print(matcher)
 
             # matcher.add(
             #     "TEST",
@@ -65,12 +65,12 @@ class PhraseExtractor:
     def extract(self, doc):
         
         matches = self.matcher(doc)
-        print("mathces: ",matches)
+        # print("mathces: ",matches)
 
         result = []
         
         for match_id, start, end in matches:
-            print("loop started")
+            # print("loop started")
             span = doc[start:end]
             matched = {
                 "text": span.text,
@@ -78,17 +78,18 @@ class PhraseExtractor:
                 "start": start,
                 "end": end
             }
-            print(span)
+            # print(span)
         
             result.append(matched)
+        # print(result)
         return result
 
 if __name__ == "__main__":
     import spacy
     nlp = spacy.load("en_core_web_trf")
-    doc = nlp("I want to book a flight to New York and reserve a hotel room.")
-    for tok in doc:
-        print(f"Tokens : {tok.text}, lower : {tok.lower_}")
+    doc = nlp("create folder")
+    # for tok in doc:
+    #     print(f"Tokens : {tok.text}, lower : {tok.lower_}")
     pe = PhraseExtractor(nlp)
-    pe.extract(nlp)
+    pe.extract(doc)
     
