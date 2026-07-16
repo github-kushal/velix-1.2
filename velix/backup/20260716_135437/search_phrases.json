@@ -1,0 +1,78 @@
+[
+    {
+        "search for": {
+            "canonical": "search for",
+            "category": "SEARCH",
+            "priority": 1,
+            "pattern": [
+                {"LOWER": "search"},
+                {"LOWER": "for"}
+            ]
+        }
+    },
+    {
+        "find": {
+            "canonical": "find",
+            "category": "SEARCH",
+            "priority": 1,
+            "pattern": [
+                {"LOWER": "find"}
+            ]
+        }
+    },
+    {
+        "look for": {
+            "canonical": "look for",
+            "category": "SEARCH",
+            "priority": 1,
+            "pattern": [
+                {"LOWER": "look"},
+                {"LOWER": "for"}
+            ]
+        }
+    },
+    {
+        "search online": {
+            "canonical": "search online",
+            "category": "WEB_SEARCH",
+            "priority": 1,
+            "pattern": [
+                {"LOWER": "search"},
+                {"LOWER": "online"}
+            ]
+        }
+    },
+    {
+        "search google": {
+            "canonical": "search google",
+            "category": "GOOGLE_SEARCH",
+            "priority": 1,
+            "pattern": [
+                {"LOWER": "search"},
+                {"LOWER": "google"}
+            ]
+        }
+    },
+    {
+        "search youtube": {
+            "canonical": "search youtube",
+            "category": "YOUTUBE_SEARCH",
+            "priority": 1,
+            "pattern": [
+                {"LOWER": "search"},
+                {"LOWER": "youtube"}
+            ]
+        }
+    },
+    {
+        "search wikipedia": {
+            "canonical": "search wikipedia",
+            "category": "WIKIPEDIA_SEARCH",
+            "priority": 1,
+            "pattern": [
+                {"LOWER": "search"},
+                {"LOWER": "wikipedia"}
+            ]
+        }
+    }
+]

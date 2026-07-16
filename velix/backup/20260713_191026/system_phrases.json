@@ -1,0 +1,92 @@
+[
+    {
+        "canonical": "shutdown computer",
+        "category": "SYSTEM",
+        "priority": 1,
+        "description": "shutdown computer"
+    },
+    {
+        "canonical": "restart computer",
+        "category": "SYSTEM",
+        "priority": 1,
+        "description": "restart computer"
+    },
+    {
+        "canonical": "sleep computer",
+        "category": "SYSTEM",
+        "priority": 1,
+        "description": "sleep computer"
+    },
+    {
+        "canonical": "lock computer",
+        "category": "SYSTEM",
+        "priority": 1,
+        "description": "lock computer"
+    },
+    {
+        "canonical": "log off",
+        "category": "SYSTEM",
+        "priority": 1,
+        "description": "log off"
+    },
+    {
+        "canonical": "increase volume",
+        "category": "AUDIO",
+        "priority": 1,
+        "description": "increase volume"
+    },
+    {
+        "canonical": "decrease volume",
+        "category": "AUDIO",
+        "priority": 1,
+        "description": "decrease volume"
+    },
+    {
+        "canonical": "mute volume",
+        "category": "AUDIO",
+        "priority": 1,
+        "description": "mute volume"
+    },
+    {
+        "canonical": "unmute volume",
+        "category": "AUDIO",
+        "priority": 1,
+        "description": "unmute volume"
+    },
+    {
+        "canonical": "increase brightness",
+        "category": "DISPLAY",
+        "priority": 1,
+        "description": "increase brightness"
+    },
+    {
+        "canonical": "decrease brightness",
+        "category": "DISPLAY",
+        "priority": 1,
+        "description": "decrease brightness"
+    },
+    {
+        "canonical": "turn on wifi",
+        "category": "NETWORK",
+        "priority": 1,
+        "description": "turn on wifi"
+    },
+    {
+        "canonical": "turn off wifi",
+        "category": "NETWORK",
+        "priority": 1,
+        "description": "turn off wifi"
+    },
+    {
+        "canonical": "enable bluetooth",
+        "category": "NETWORK",
+        "priority": 1,
+        "description": "enable bluetooth"
+    },
+    {
+        "canonical": "disable bluetooth",
+        "category": "NETWORK",
+        "priority": 1,
+        "description": "disable bluetooth"
+    }
+]

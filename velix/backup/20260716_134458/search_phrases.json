@@ -1,0 +1,44 @@
+[
+    {
+        "canonical": "search for",
+        "category": "SEARCH",
+        "priority": 1,
+        "description": "search for"
+    },
+    {
+        "canonical": "find",
+        "category": "SEARCH",
+        "priority": 1,
+        "description": "find"
+    },
+    {
+        "canonical": "look for",
+        "category": "SEARCH",
+        "priority": 1,
+        "description": "look for"
+    },
+    {
+        "canonical": "search online",
+        "category": "WEB_SEARCH",
+        "priority": 1,
+        "description": "search online"
+    },
+    {
+        "canonical": "search google",
+        "category": "GOOGLE_SEARCH",
+        "priority": 1,
+        "description": "search google"
+    },
+    {
+        "canonical": "search youtube",
+        "category": "YOUTUBE_SEARCH",
+        "priority": 1,
+        "description": "search youtube"
+    },
+    {
+        "canonical": "search wikipedia",
+        "category": "WIKIPEDIA_SEARCH",
+        "priority": 1,
+        "description": "search wikipedia"
+    }
+]

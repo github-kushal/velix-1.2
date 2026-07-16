@@ -1,0 +1,68 @@
+[
+    {
+        "canonical": "open application",
+        "category": "APPLICATION",
+        "priority": 1,
+        "description": "Open the application"
+    },
+    {
+        "canonical": "launch application",
+        "category": "APPLICATION",
+        "priority": 1,
+        "description": "Launch the application"
+    },
+    {
+        "canonical": "start application",
+        "category": "APPLICATION",
+        "priority": 1,
+        "description": "Start the application"
+    },
+    {
+        "canonical": "run application",
+        "category": "APPLICATION",
+        "priority": 1,
+        "description": "Run the application"
+    },
+    {
+        "canonical": "close application",
+        "category": "APPLICATION",
+        "priority": 1,
+        "description": "Close the application"
+    },
+    {
+        "canonical": "exit application",
+        "category": "APPLICATION",
+        "priority": 1,
+        "description": "Exit the application"
+    },
+    {
+        "canonical": "quit application",
+        "category": "APPLICATION",
+        "priority": 1,
+        "description": "Quit the application"
+    },
+    {
+        "canonical": "restart application",
+        "category": "APPLICATION",
+        "priority": 1,
+        "description": "Restart the application"
+    },
+    {
+        "canonical": "minimize window",
+        "category": "WINDOW",
+        "priority": 1,
+        "description": "Minimize the window"
+    },
+    {
+        "canonical": "maximize window",
+        "category": "WINDOW",
+        "priority": 1,
+        "description": "Maximize the window"
+    },
+    {
+        "canonical": "restore window",
+        "category": "WINDOW",
+        "priority": 1,
+        "description": "Restore the window"
+    }
+]

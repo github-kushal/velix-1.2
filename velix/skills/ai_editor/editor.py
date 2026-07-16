@@ -57,6 +57,8 @@ class AIEditor:
 
             response = self._generate(prompt)
 
+            print(f"Response : {response}")
+
             validation = self._validate(
                 response,
                 request.file_type,
@@ -193,7 +195,7 @@ class AIEditor:
         return self.llm.ping()
     
 if __name__ == "__main__":
-    files = ["browser_phrases.json", "calendar_phrases.json", "communication_phrases.json", "file_phrases.json", "media_phrases.json", "phrasal_verbs.json", "reminder_phrases.json", "search_phrases.json", "system_phrases.json", "utility_phrases.json", "web_phrases.json"]
+    files = ["search_phrases.json"]
     ae = AIEditor()
     for file in files:
         response = ae.edit_file(
@@ -201,15 +203,30 @@ if __name__ == "__main__":
         instruction="""
         Upgrade this JSON to the new semantic schema.
 
-        Requirements:
-        - Convert every phrase into an object.
-        - Include:
-            canonical
-            category
-            priority
-            description
-        - Preserve every existing phrase.
-        - Return only valid JSON.
+            Requirements:
+            - Convert every phrase into an object.
+            - Include:
+                canonical
+                category
+                priority
+                description
+            - Example format :
+                {
+                    "open browser": {
+                        "canonical": "OPEN_BROWSER",
+                        "category": "browser",
+                        "priority": 100,
+                        "pattern": [
+                            {"LOWER": "open"},
+                            {"LOWER": "browser"}
+                        ]
+                    }
+                }
+            -strictly follow the format given in example including the types of brackets
+            - Keep in mind that there should be only a pure json output only, no extra quotes and commas other than the information present inside the main brackets.
+            - Preserve every existing phrase.
+            - Return only valid and proper JSON. (most important)
+            - Maintain the given format. (most important)
         """,
             )
     # print(response)
@@ -218,4 +235,3 @@ if __name__ == "__main__":
         print("Success!")
     else:
         print(response.message)
-

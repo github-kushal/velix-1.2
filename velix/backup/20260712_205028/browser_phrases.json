@@ -1,0 +1,74 @@
+[
+    {
+        "canonical": "open browser",
+        "category": "Browser Actions",
+        "priority": 1,
+        "description": "OPEN_BROWSER"
+    },
+    {
+        "canonical": "close browser",
+        "category": "Browser Actions",
+        "priority": 1,
+        "description": "CLOSE_BROWSER"
+    },
+    {
+        "canonical": "new tab",
+        "category": "Tab Management",
+        "priority": 1,
+        "description": "NEW_TAB"
+    },
+    {
+        "canonical": "close tab",
+        "category": "Tab Management",
+        "priority": 1,
+        "description": "CLOSE_TAB"
+    },
+    {
+        "canonical": "new window",
+        "category": "Window Management",
+        "priority": 1,
+        "description": "NEW_WINDOW"
+    },
+    {
+        "canonical": "close window",
+        "category": "Window Management",
+        "priority": 1,
+        "description": "CLOSE_WINDOW"
+    },
+    {
+        "canonical": "reload page",
+        "category": "Navigation",
+        "priority": 1,
+        "description": "REFRESH_PAGE"
+    },
+    {
+        "canonical": "refresh page",
+        "category": "Navigation",
+        "priority": 1,
+        "description": "REFRESH_PAGE"
+    },
+    {
+        "canonical": "go back",
+        "category": "Navigation",
+        "priority": 1,
+        "description": "GO_BACK"
+    },
+    {
+        "canonical": "go forward",
+        "category": "Navigation",
+        "priority": 1,
+        "description": "GO_FORWARD"
+    },
+    {
+        "canonical": "clear history",
+        "category": "History Management",
+        "priority": 1,
+        "description": "CLEAR_HISTORY"
+    },
+    {
+        "canonical": "clear cache",
+        "category": "Cache Management",
+        "priority": 1,
+        "description": "CLEAR_CACHE"
+    }
+]

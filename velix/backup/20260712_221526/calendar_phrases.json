@@ -1,0 +1,32 @@
+{
+    "create event": {
+        "canonical": "CREATE_EVENT",
+        "category": "calendar",
+        "priority": 1,
+        "description": "create event"
+    },
+    "schedule meeting": {
+        "canonical": "SCHEDULE_MEETING",
+        "category": "calendar",
+        "priority": 1,
+        "description": "schedule meeting"
+    },
+    "cancel meeting": {
+        "canonical": "CANCEL_MEETING",
+        "category": "calendar",
+        "priority": 1,
+        "description": "cancel meeting"
+    },
+    "show calendar": {
+        "canonical": "SHOW_CALENDAR",
+        "category": "calendar",
+        "priority": 1,
+        "description": "show calendar"
+    },
+    "what's on my calendar": {
+        "canonical": "WHATS_ON_MY_CALENDAR",
+        "category": "calendar",
+        "priority": 1,
+        "description": "what's on my calendar"
+    }
+}

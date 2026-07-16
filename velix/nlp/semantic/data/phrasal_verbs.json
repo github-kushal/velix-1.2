@@ -1,464 +1,139 @@
 {
   "TURN_ON": {
-    "primary_phrase": "turn on",
+    "canonical": "TURN_ON",
     "category": "generic",
-    "type": "phrasal_verb",
     "priority": 100,
-    "aliases": [
-      "switch on",
-      "power on",
-      "enable"
-    ],
-    "requires_target": true,
-    "requires_modifier": false,
-    "supported_targets": ["DEVICE", "SERVICE", "FEATURE"],
-    "supported_platforms": ["cross_platform"],
-    "permissions": [],
-    "examples": [
-      "turn on wifi",
-      "switch on bluetooth",
-      "power on the monitor"
-    ],
     "description": "Enables or powers on a target.",
-    "deprecated": false,
-    "version": "1.0"
+    "pattern": [
+      {"LOWER": "turn"}, {"LOWER": "on"},
+      {"LOWER": "switch"}, {"LOWER": "on"},
+      {"LOWER": "power"}, {"LOWER": "on"},
+      {"LOWER": "enable"}
+    ]
   },
-
   "TURN_OFF": {
-    "primary_phrase": "turn off",
+    "canonical": "TURN_OFF",
     "category": "generic",
-    "type": "phrasal_verb",
     "priority": 100,
-    "aliases": [
-      "switch off",
-      "power off",
-      "disable"
-    ],
-    "requires_target": true,
-    "requires_modifier": false,
-    "supported_targets": ["DEVICE", "SERVICE", "FEATURE"],
-    "supported_platforms": ["cross_platform"],
-    "permissions": [],
-    "examples": [
-      "turn off wifi",
-      "switch off bluetooth",
-      "power off the pc"
-    ],
     "description": "Disables or powers off a target.",
-    "deprecated": false,
-    "version": "1.0"
+    "pattern": [
+      {"LOWER": "turn"}, {"LOWER": "off"},
+      {"LOWER": "switch"}, {"LOWER": "off"},
+      {"LOWER": "power"}, {"LOWER": "off"},
+      {"LOWER": "disable"}
+    ]
   },
-
   "LOG_IN": {
-    "primary_phrase": "log in",
+    "canonical": "LOG_IN",
     "category": "generic",
-    "type": "phrasal_verb",
     "priority": 95,
-    "aliases": [
-      "sign in",
-      "login"
-    ],
-    "requires_target": false,
-    "requires_modifier": false,
-    "supported_targets": ["ACCOUNT", "SERVICE"],
-    "supported_platforms": ["cross_platform"],
-    "permissions": [],
-    "examples": [
-      "log in to gmail",
-      "sign in to github"
-    ],
     "description": "Authenticate into an account.",
-    "deprecated": false,
-    "version": "1.0"
+    "pattern": [
+      {"LOWER": "log"}, {"LOWER": "in"},
+      {"LOWER": "sign"}, {"LOWER": "in"},
+      {"LOWER": "login"}
+    ]
   },
-
   "LOG_OUT": {
-    "primary_phrase": "log out",
+    "canonical": "LOG_OUT",
     "category": "generic",
-    "type": "phrasal_verb",
     "priority": 95,
-    "aliases": [
-      "sign out",
-      "logout"
-    ],
-    "requires_target": false,
-    "requires_modifier": false,
-    "supported_targets": ["ACCOUNT", "SERVICE"],
-    "supported_platforms": ["cross_platform"],
-    "permissions": [],
-    "examples": [
-      "log out of chrome",
-      "sign out of outlook"
-    ],
-    "description": "Ends an authenticated session.",
-    "deprecated": false,
-    "version": "1.0"
+    "description": "Terminate an active session.",
+    "pattern": [
+      {"LOWER": "log"}, {"LOWER": "out"},
+      {"LOWER": "sign"}, {"LOWER": "out"}
+    ]
   },
-
-  "SET_UP": {
-    "primary_phrase": "set up",
-    "category": "generic",
-    "type": "phrasal_verb",
-    "priority": 90,
-    "aliases": [
-      "configure",
-      "initialize",
-      "prepare"
-    ],
-    "requires_target": true,
-    "requires_modifier": false,
-    "supported_targets": ["DEVICE", "SERVICE", "APPLICATION"],
-    "supported_platforms": ["cross_platform"],
-    "permissions": [],
-    "examples": [
-      "set up printer",
-      "configure wifi"
-    ],
-    "description": "Configures a target for use.",
-    "deprecated": false,
-    "version": "1.0"
-  },
-
-  "SHUT_DOWN": {
-    "primary_phrase": "shut down",
-    "category": "generic",
-    "type": "phrasal_verb",
-    "priority": 100,
-    "aliases": [
-      "shutdown",
-      "power down"
-    ],
-    "requires_target": true,
-    "requires_modifier": false,
-    "supported_targets": ["COMPUTER", "DEVICE", "SERVICE"],
-    "supported_platforms": ["cross_platform"],
-    "permissions": ["admin"],
-    "examples": [
-      "shut down computer",
-      "power down server"
-    ],
-    "description": "Gracefully powers off a system.",
-    "deprecated": false,
-    "version": "1.0"
-  },
-
-  "BACK_UP": {
-    "primary_phrase": "back up",
-    "category": "generic",
-    "type": "phrasal_verb",
-    "priority": 90,
-    "aliases": [
-      "create backup",
-      "backup"
-    ],
-    "requires_target": true,
-    "requires_modifier": false,
-    "supported_targets": ["FILE", "FOLDER", "DATABASE"],
-    "supported_platforms": ["cross_platform"],
-    "permissions": ["filesystem"],
-    "examples": [
-      "back up documents",
-      "backup photos"
-    ],
-    "description": "Creates a backup copy.",
-    "deprecated": false,
-    "version": "1.0"
-  },
-
-  "CLEAN_UP": {
-    "primary_phrase": "clean up",
-    "category": "generic",
-    "type": "phrasal_verb",
-    "priority": 80,
-    "aliases": [
-      "cleanup",
-      "tidy up"
-    ],
-    "requires_target": true,
-    "requires_modifier": false,
-    "supported_targets": ["SYSTEM", "FOLDER", "FILES"],
-    "supported_platforms": ["cross_platform"],
-    "permissions": [],
-    "examples": [
-      "clean up downloads",
-      "tidy up desktop"
-    ],
-    "description": "Removes unnecessary items.",
-    "deprecated": false,
-    "version": "1.0"
-  },
-
-  "WAKE_UP": {
-    "primary_phrase": "wake up",
-    "category": "generic",
-    "type": "phrasal_verb",
-    "priority": 90,
-    "aliases": [
-      "resume",
-      "wake"
-    ],
-    "requires_target": true,
-    "requires_modifier": false,
-    "supported_targets": ["COMPUTER", "DEVICE", "DISPLAY"],
-    "supported_platforms": ["cross_platform"],
-    "permissions": [],
-    "examples": [
-      "wake up the computer",
-      "resume the laptop"
-    ],
-    "description": "Resumes a sleeping device.",
-    "deprecated": false,
-    "version": "1.0"
-  },
-
-  "PUT_TO_SLEEP": {
-    "primary_phrase": "put to sleep",
-    "category": "generic",
-    "type": "phrasal_verb",
-    "priority": 90,
-    "aliases": [
-      "sleep",
-      "sleep mode"
-    ],
-    "requires_target": true,
-    "requires_modifier": false,
-    "supported_targets": ["COMPUTER", "DEVICE"],
-    "supported_platforms": ["cross_platform"],
-    "permissions": [],
-    "examples": [
-      "put my pc to sleep",
-      "sleep the laptop"
-    ],
-    "description": "Places a device into sleep mode.",
-    "deprecated": false,
-    "version": "1.0"
-  },
-
-  "CHECK_OUT": {
-    "primary_phrase": "check out",
-    "category": "generic",
-    "type": "phrasal_verb",
-    "priority": 75,
-    "aliases": [
-      "inspect",
-      "look at"
-    ],
-    "requires_target": true,
-    "requires_modifier": false,
-    "supported_targets": ["FILE", "WEBSITE", "ITEM"],
-    "supported_platforms": ["cross_platform"],
-    "permissions": [],
-    "examples": [
-      "check out this website",
-      "look at the report"
-    ],
-    "description": "Views or inspects a target.",
-    "deprecated": false,
-    "version": "1.0"
-  },
-
-  "LOOK_UP": {
-    "primary_phrase": "look up",
-    "category": "search",
-    "type": "phrasal_verb",
-    "priority": 95,
-    "aliases": [
-      "search for",
-      "find",
-      "lookup"
-    ],
-    "requires_target": true,
-    "requires_modifier": false,
-    "supported_targets": ["TEXT", "PERSON", "FILE", "WEBSITE"],
-    "supported_platforms": ["cross_platform"],
-    "permissions": [],
-    "examples": [
-      "look up python",
-      "search for chrome"
-    ],
-    "description": "Searches for information.",
-    "deprecated": false,
-    "version": "1.0"
-  },
-
-  "FIND_OUT": {
-    "primary_phrase": "find out",
-    "category": "search",
-    "type": "phrasal_verb",
-    "priority": 80,
-    "aliases": [
-      "discover",
-      "determine"
-    ],
-    "requires_target": true,
-    "requires_modifier": false,
-    "supported_targets": ["INFORMATION", "ANSWER"],
-    "supported_platforms": ["cross_platform"],
-    "permissions": [],
-    "examples": [
-      "find out today's weather",
-      "discover who created python"
-    ],
-    "description": "Obtains requested information.",
-    "deprecated": false,
-    "version": "1.0"
-  },
-
-  "BRING_UP": {
-    "primary_phrase": "bring up",
-    "category": "generic",
-    "type": "phrasal_verb",
-    "priority": 80,
-    "aliases": [
-      "open",
-      "display"
-    ],
-    "requires_target": true,
-    "requires_modifier": false,
-    "supported_targets": ["WINDOW", "MENU", "APPLICATION"],
-    "supported_platforms": ["cross_platform"],
-    "permissions": [],
-    "examples": [
-      "bring up task manager",
-      "display settings"
-    ],
-    "description": "Displays a requested interface.",
-    "deprecated": false,
-    "version": "1.0"
-  },
-
-  "CARRY_OUT": {
-    "primary_phrase": "carry out",
-    "category": "generic",
-    "type": "phrasal_verb",
-    "priority": 75,
-    "aliases": [
-      "execute",
-      "perform"
-    ],
-    "requires_target": true,
-    "requires_modifier": false,
-    "supported_targets": ["TASK", "COMMAND"],
-    "supported_platforms": ["cross_platform"],
-    "permissions": [],
-    "examples": [
-      "carry out the backup",
-      "perform cleanup"
-    ],
-    "description": "Executes a task or command.",
-    "deprecated": false,
-    "version": "1.0"
-  },
-
-  "CALL_OFF": {
-    "primary_phrase": "call off",
-    "category": "generic",
-    "type": "phrasal_verb",
-    "priority": 80,
-    "aliases": [
-      "cancel",
-      "abort",
-      "stop"
-    ],
-    "requires_target": true,
-    "requires_modifier": false,
-    "supported_targets": ["TASK", "DOWNLOAD", "EVENT"],
-    "supported_platforms": ["cross_platform"],
-    "permissions": [],
-    "examples": [
-      "call off the download",
-      "cancel the meeting"
-    ],
-    "description": "Cancels an ongoing or scheduled action.",
-    "deprecated": false,
-    "version": "1.0"
-  },
-
-  "GO_BACK": {
-    "primary_phrase": "go back",
-    "category": "browser",
-    "type": "phrasal_verb",
-    "priority": 90,
-    "aliases": [
-      "back"
-    ],
-    "requires_target": false,
-    "requires_modifier": false,
-    "supported_targets": ["BROWSER"],
-    "supported_platforms": ["cross_platform"],
-    "permissions": [],
-    "examples": [
-      "go back",
-      "back one page"
-    ],
-    "description": "Navigates to the previous page.",
-    "deprecated": false,
-    "version": "1.0"
-  },
-
-  "GO_FORWARD": {
-    "primary_phrase": "go forward",
-    "category": "browser",
-    "type": "phrasal_verb",
-    "priority": 90,
-    "aliases": [
-      "forward"
-    ],
-    "requires_target": false,
-    "requires_modifier": false,
-    "supported_targets": ["BROWSER"],
-    "supported_platforms": ["cross_platform"],
-    "permissions": [],
-    "examples": [
-      "go forward",
-      "forward one page"
-    ],
-    "description": "Navigates to the next page.",
-    "deprecated": false,
-    "version": "1.0"
-  },
-
   "SCROLL_UP": {
-    "primary_phrase": "scroll up",
+    "canonical": "SCROLL_UP",
     "category": "browser",
-    "type": "phrasal_verb",
     "priority": 80,
-    "aliases": [
-      "move up"
-    ],
-    "requires_target": false,
-    "requires_modifier": false,
-    "supported_targets": ["PAGE", "DOCUMENT"],
-    "supported_platforms": ["cross_platform"],
-    "permissions": [],
-    "examples": [
-      "scroll up",
-      "move up the page"
-    ],
     "description": "Moves the view upward.",
-    "deprecated": false,
-    "version": "1.0"
+    "pattern": [
+      {"LOWER": "scroll"}, {"LOWER": "up"},
+      {"LOWER": "move"}, {"LOWER": "up"}
+    ]
   },
-
   "SCROLL_DOWN": {
-    "primary_phrase": "scroll down",
+    "canonical": "SCROLL_DOWN",
     "category": "browser",
-    "type": "phrasal_verb",
     "priority": 80,
-    "aliases": [
-      "move down"
-    ],
-    "requires_target": false,
-    "requires_modifier": false,
-    "supported_targets": ["PAGE", "DOCUMENT"],
-    "supported_platforms": ["cross_platform"],
-    "permissions": [],
-    "examples": [
-      "scroll down",
-      "move down the page"
-    ],
     "description": "Moves the view downward.",
-    "deprecated": false,
-    "version": "1.0"
+    "pattern": [
+      {"LOWER": "scroll"}, {"LOWER": "down"},
+      {"LOWER": "move"}, {"LOWER": "down"}
+    ]
+  },
+  "GO_BACK": {
+    "canonical": "GO_BACK",
+    "category": "browser",
+    "priority": 90,
+    "description": "Navigates to the previous page.",
+    "pattern": [
+      {"LOWER": "go"}, {"LOWER": "back"},
+      {"LOWER": "back"}
+    ]
+  },
+  "GO_FORWARD": {
+    "canonical": "GO_FORWARD",
+    "category": "browser",
+    "priority": 90,
+    "description": "Navigates to the next page.",
+    "pattern": [
+      {"LOWER": "go"}, {"LOWER": "forward"},
+      {"LOWER": "forward"}
+    ]
+  },
+  "BRING_UP": {
+    "canonical": "BRING_UP",
+    "category": "generic",
+    "priority": 80,
+    "description": "Displays a requested interface.",
+    "pattern": [
+      {"LOWER": "bring"}, {"LOWER": "up"},
+      {"LOWER": "open"},
+      {"LOWER": "display"}
+    ]
+  },
+  "CARRY_OUT": {
+    "canonical": "CARRY_OUT",
+    "category": "generic",
+    "priority": 75,
+    "description": "Executes a task or command.",
+    "pattern": [
+      {"LOWER": "carry"}, {"LOWER": "out"},
+      {"LOWER": "execute"},
+      {"LOWER": "perform"}
+    ]
+  },
+  "CALL_OFF": {
+    "canonical": "CALL_OFF",
+    "category": "generic",
+    "priority": 80,
+    "description": "Cancels an ongoing or scheduled action.",
+    "pattern": [
+      {"LOWER": "call"}, {"LOWER": "off"},
+      {"LOWER": "cancel"},
+      {"LOWER": "abort"},
+      {"LOWER": "stop"}
+    ]
+  },
+  "FIND": {
+    "canonical": "FIND",
+    "category": "generic",
+    "priority": 80,
+    "description": "Locates specific content.",
+    "pattern": [
+      {"LOWER": "find"}
+    ]
+  },
+  "SEARCH": {
+    "canonical": "SEARCH",
+    "category": "generic",
+    "priority": 80,
+    "description": "Locates specific content.",
+    "pattern": [
+      {"LOWER": "search"}
+    ]
   }
 }

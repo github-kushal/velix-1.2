@@ -1,0 +1,50 @@
+[
+    {
+        "canonical": "SEND_EMAIL",
+        "category": "email",
+        "priority": 1,
+        "description": "send email"
+    },
+    {
+        "canonical": "READ_EMAIL",
+        "category": "email",
+        "priority": 1,
+        "description": "read email"
+    },
+    {
+        "canonical": "COMPOSE_EMAIL",
+        "category": "email",
+        "priority": 1,
+        "description": "compose email"
+    },
+    {
+        "canonical": "SEND_MESSAGE",
+        "category": "message",
+        "priority": 1,
+        "description": "send message"
+    },
+    {
+        "canonical": "REPLY_MESSAGE",
+        "category": "message",
+        "priority": 1,
+        "description": "reply message"
+    },
+    {
+        "canonical": "MAKE_CALL",
+        "category": "call",
+        "priority": 1,
+        "description": "make call"
+    },
+    {
+        "canonical": "ANSWER_CALL",
+        "category": "call",
+        "priority": 1,
+        "description": "answer call"
+    },
+    {
+        "canonical": "REJECT_CALL",
+        "category": "call",
+        "priority": 1,
+        "description": "reject call"
+    }
+]

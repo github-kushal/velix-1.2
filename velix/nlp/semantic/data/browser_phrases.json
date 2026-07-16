@@ -1,74 +1,92 @@
-[
-    {
-        "canonical": "open browser",
+{
+    "open browser": {
+        "canonical": "OPEN_BROWSER",
         "category": "Browser Actions",
         "priority": 1,
-        "description": "OPEN_BROWSER"
+        "description": "OPEN_BROWSER",
+        "pattern": [
+            {"LOWER": "open"},
+            {"LOWER": "browser"}
+        ]
     },
-    {
-        "canonical": "close browser",
+    "close browser": {
+        "canonical": "CLOSE_BROWSER",
         "category": "Browser Actions",
         "priority": 1,
-        "description": "CLOSE_BROWSER"
+        "description": "CLOSE_BROWSER",
+        "pattern": [
+            {"LOWER": "close"},
+            {"LOWER": "browser"}
+        ]
     },
-    {
-        "canonical": "new tab",
+    "new tab": {
+        "canonical": "NEW_TAB",
         "category": "Tab Management",
         "priority": 1,
-        "description": "NEW_TAB"
+        "description": "NEW_TAB",
+        "pattern": [
+            {"LOWER": "new"},
+            {"LOWER": "tab"}
+        ]
     },
-    {
-        "canonical": "close tab",
+    "close tab": {
+        "canonical": "CLOSE_TAB",
         "category": "Tab Management",
         "priority": 1,
-        "description": "CLOSE_TAB"
+        "description": "CLOSE_TAB",
+        "pattern": [
+            {"LOWER": "close"},
+            {"LOWER": "tab"}
+        ]
     },
-    {
-        "canonical": "new window",
+    "new window": {
+        "canonical": "NEW_WINDOW",
         "category": "Window Management",
         "priority": 1,
-        "description": "NEW_WINDOW"
+        "description": "NEW_WINDOW",
+        "pattern": [
+            {"LOWER": "new"},
+            {"LOWER": "window"}
+        ]
     },
-    {
-        "canonical": "close window",
+    "close window": {
+        "canonical": "CLOSE_WINDOW",
         "category": "Window Management",
         "priority": 1,
-        "description": "CLOSE_WINDOW"
+        "description": "CLOSE_WINDOW",
+        "pattern": [
+            {"LOWER": "close"},
+            {"LOWER": "window"}
+        ]
     },
-    {
-        "canonical": "reload page",
+    "reload page": {
+        "canonical": "REFRESH_PAGE",
         "category": "Navigation",
         "priority": 1,
-        "description": "REFRESH_PAGE"
+        "description": "REFRESH_PAGE",
+        "pattern": [
+            {"LOWER": "reload"},
+            {"LOWER": "page"}
+        ]
     },
-    {
-        "canonical": "refresh page",
+    "refresh page": {
+        "canonical": "REFRESH_PAGE",
         "category": "Navigation",
         "priority": 1,
-        "description": "REFRESH_PAGE"
+        "description": "REFRESH_PAGE",
+        "pattern": [
+            {"LOWER": "refresh"},
+            {"LOWER": "page"}
+        ]
     },
-    {
-        "canonical": "go back",
+    "go back": {
+        "canonical": "GO_BACK",
         "category": "Navigation",
         "priority": 1,
-        "description": "GO_BACK"
-    },
-    {
-        "canonical": "go forward",
-        "category": "Navigation",
-        "priority": 1,
-        "description": "GO_FORWARD"
-    },
-    {
-        "canonical": "clear history",
-        "category": "History Management",
-        "priority": 1,
-        "description": "CLEAR_HISTORY"
-    },
-    {
-        "canonical": "clear cache",
-        "category": "Cache Management",
-        "priority": 1,
-        "description": "CLEAR_CACHE"
+        "description": "GO_BACK",
+        "pattern": [
+            {"LOWER": "go"},
+            {"LOWER": "back"}
+        ]
     }
-]
+}

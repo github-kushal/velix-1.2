@@ -1,44 +1,70 @@
-[
-    {
+{
+    "calculate": {
         "canonical": "calculate",
         "category": "CALCULATE",
         "priority": 1,
-        "description": "calculate"
+        "description": "calculate",
+        "pattern": [
+            {"LOWER": "calculate"}
+        ]
     },
-    {
+    "convert units": {
         "canonical": "convert units",
         "category": "UNIT_CONVERSION",
         "priority": 1,
-        "description": "convert units"
+        "description": "convert units",
+        "pattern": [
+            {"LOWER": "convert"},
+            {"LOWER": "units"}
+        ]
     },
-    {
+    "translate": {
         "canonical": "translate",
         "category": "TRANSLATE",
         "priority": 1,
-        "description": "translate"
+        "description": "translate",
+        "pattern": [
+            {"LOWER": "translate"}
+        ]
     },
-    {
+    "tell time": {
         "canonical": "tell time",
         "category": "GET_TIME",
         "priority": 1,
-        "description": "tell time"
+        "description": "tell time",
+        "pattern": [
+            {"LOWER": "tell"},
+            {"LOWER": "time"}
+        ]
     },
-    {
+    "tell date": {
         "canonical": "tell date",
         "category": "GET_DATE",
         "priority": 1,
-        "description": "tell date"
+        "description": "tell date",
+        "pattern": [
+            {"LOWER": "tell"},
+            {"LOWER": "date"}
+        ]
     },
-    {
+    "check weather": {
         "canonical": "check weather",
         "category": "GET_WEATHER",
         "priority": 1,
-        "description": "check weather"
+        "description": "check weather",
+        "pattern": [
+            {"LOWER": "check"},
+            {"LOWER": "weather"}
+        ]
     },
-    {
+    "show weather": {
         "canonical": "show weather",
         "category": "GET_WEATHER",
         "priority": 1,
-        "description": "show weather"
+        "description": "show weather",
+        "pattern": [
+            {"LOWER": "show"},
+            {"LOWER": "weather"}
+        ]
     }
-]
+}

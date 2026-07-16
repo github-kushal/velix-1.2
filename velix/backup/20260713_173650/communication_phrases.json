@@ -1,0 +1,50 @@
+{
+    "send email": {
+        "canonical": "SEND_EMAIL",
+        "category": "email",
+        "priority": 1,
+        "description": "send email"
+    },
+    "read email": {
+        "canonical": "READ_EMAIL",
+        "category": "email",
+        "priority": 1,
+        "description": "read email"
+    },
+    "compose email": {
+        "canonical": "COMPOSE_EMAIL",
+        "category": "email",
+        "priority": 1,
+        "description": "compose email"
+    },
+    "send message": {
+        "canonical": "SEND_MESSAGE",
+        "category": "message",
+        "priority": 1,
+        "description": "send message"
+    },
+    "reply message": {
+        "canonical": "REPLY_MESSAGE",
+        "category": "message",
+        "priority": 1,
+        "description": "reply message"
+    },
+    "make call": {
+        "canonical": "MAKE_CALL",
+        "category": "call",
+        "priority": 1,
+        "description": "make call"
+    },
+    "answer call": {
+        "canonical": "ANSWER_CALL",
+        "category": "call",
+        "priority": 1,
+        "description": "answer call"
+    },
+    "reject call": {
+        "canonical": "REJECT_CALL",
+        "category": "call",
+        "priority": 1,
+        "description": "reject call"
+    }
+}

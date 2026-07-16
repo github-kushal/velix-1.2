@@ -1,0 +1,56 @@
+{
+    "open browser": {
+        "canonical": "OPEN_BROWSER",
+        "category": "Browser Actions",
+        "priority": 1,
+        "description": "OPEN_BROWSER"
+    },
+    "close browser": {
+        "canonical": "CLOSE_BROWSER",
+        "category": "Browser Actions",
+        "priority": 1,
+        "description": "CLOSE_BROWSER"
+    },
+    "new tab": {
+        "canonical": "NEW_TAB",
+        "category": "Tab Management",
+        "priority": 1,
+        "description": "NEW_TAB"
+    },
+    "close tab": {
+        "canonical": "CLOSE_TAB",
+        "category": "Tab Management",
+        "priority": 1,
+        "description": "CLOSE_TAB"
+    },
+    "new window": {
+        "canonical": "NEW_WINDOW",
+        "category": "Window Management",
+        "priority": 1,
+        "description": "NEW_WINDOW"
+    },
+    "close window": {
+        "canonical": "CLOSE_WINDOW",
+        "category": "Window Management",
+        "priority": 1,
+        "description": "CLOSE_WINDOW"
+    },
+    "reload page": {
+        "canonical": "REFRESH_PAGE",
+        "category": "Navigation",
+        "priority": 1,
+        "description": "REFRESH_PAGE"
+    },
+    "refresh page": {
+        "canonical": "REFRESH_PAGE",
+        "category": "Navigation",
+        "priority": 1,
+        "description": "REFRESH_PAGE"
+    },
+    "go back": {
+        "canonical": "GO_BACK",
+        "category": "Navigation",
+        "priority": 1,
+        "description": "GO_BACK"
+    }
+}

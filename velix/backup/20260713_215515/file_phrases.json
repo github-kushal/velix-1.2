@@ -1,0 +1,74 @@
+{
+    "create folder": {
+        "canonical": "create folder",
+        "category": "folder",
+        "priority": 1,
+        "description": "CREATE_FOLDER"
+    },
+    "create file": {
+        "canonical": "create file",
+        "category": "file",
+        "priority": 1,
+        "description": "CREATE_FILE"
+    },
+    "delete file": {
+        "canonical": "delete file",
+        "category": "file",
+        "priority": 1,
+        "description": "DELETE_FILE"
+    },
+    "delete folder": {
+        "canonical": "delete folder",
+        "category": "folder",
+        "priority": 1,
+        "description": "DELETE_FOLDER"
+    },
+    "rename file": {
+        "canonical": "rename file",
+        "category": "file",
+        "priority": 1,
+        "description": "RENAME_FILE"
+    },
+    "rename folder": {
+        "canonical": "rename folder",
+        "category": "folder",
+        "priority": 1,
+        "description": "RENAME_FOLDER"
+    },
+    "copy file": {
+        "canonical": "copy file",
+        "category": "file",
+        "priority": 1,
+        "description": "COPY_FILE"
+    },
+    "move file": {
+        "canonical": "move file",
+        "category": "file",
+        "priority": 1,
+        "description": "MOVE_FILE"
+    },
+    "cut file": {
+        "canonical": "cut file",
+        "category": "file",
+        "priority": 1,
+        "description": "CUT_FILE"
+    },
+    "paste file": {
+        "canonical": "paste file",
+        "category": "file",
+        "priority": 1,
+        "description": "PASTE_FILE"
+    },
+    "compress folder": {
+        "canonical": "compress folder",
+        "category": "folder",
+        "priority": 1,
+        "description": "ZIP_FOLDER"
+    },
+    "extract archive": {
+        "canonical": "extract archive",
+        "category": "archive",
+        "priority": 1,
+        "description": "UNZIP_FOLDER"
+    }
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "canonical": "set reminder",
+        "category": "reminder",
+        "priority": 1,
+        "description": "CREATE_REMINDER"
+    },
+    {
+        "canonical": "remove reminder",
+        "category": "reminder",
+        "priority": 1,
+        "description": "DELETE_REMINDER"
+    },
+    {
+        "canonical": "show reminders",
+        "category": "reminder",
+        "priority": 1,
+        "description": "SHOW_REMINDERS"
+    },
+    {
+        "canonical": "edit reminder",
+        "category": "reminder",
+        "priority": 1,
+        "description": "EDIT_REMINDER"
+    }
+]

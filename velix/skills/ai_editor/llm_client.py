@@ -32,6 +32,8 @@ class LLMClient:
             options={
                 "temperature": temperature,
                 "num_gpu": 0,
+                "num_thread": 12,
+                "num_ctx" : 12288,
             },
         )
 
@@ -50,6 +52,8 @@ class LLMClient:
             model=self.model,
             messages=messages,
             options={
+                "num_gpu": 0,
+                "num_thread": 12,
                 "temperature": temperature,
             },
         )

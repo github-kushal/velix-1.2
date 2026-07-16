@@ -1,62 +1,92 @@
-[
-    {
+{
+    "play music": {
         "canonical": "PLAY_MUSIC",
         "category": "music control",
         "priority": 1,
-        "description": "play music"
+        "pattern": [
+            {"LOWER": "play"},
+            {"LOWER": "music"}
+        ]
     },
-    {
+    "pause music": {
         "canonical": "PAUSE_MUSIC",
         "category": "music control",
         "priority": 1,
-        "description": "pause music"
+        "pattern": [
+            {"LOWER": "pause"},
+            {"LOWER": "music"}
+        ]
     },
-    {
+    "resume music": {
         "canonical": "RESUME_MUSIC",
         "category": "music control",
         "priority": 1,
-        "description": "resume music"
+        "pattern": [
+            {"LOWER": "resume"},
+            {"LOWER": "music"}
+        ]
     },
-    {
+    "stop music": {
         "canonical": "STOP_MUSIC",
         "category": "music control",
         "priority": 1,
-        "description": "stop music"
+        "pattern": [
+            {"LOWER": "stop"},
+            {"LOWER": "music"}
+        ]
     },
-    {
+    "next song": {
         "canonical": "NEXT_TRACK",
         "category": "music control",
         "priority": 1,
-        "description": "next song"
+        "pattern": [
+            {"LOWER": "next"},
+            {"LOWER": "song"}
+        ]
     },
-    {
+    "previous song": {
         "canonical": "PREVIOUS_TRACK",
         "category": "music control",
         "priority": 1,
-        "description": "previous song"
+        "pattern": [
+            {"LOWER": "previous"},
+            {"LOWER": "song"}
+        ]
     },
-    {
+    "increase volume": {
         "canonical": "VOLUME_UP",
         "category": "music control",
         "priority": 1,
-        "description": "increase volume"
+        "pattern": [
+            {"LOWER": "increase"},
+            {"LOWER": "volume"}
+        ]
     },
-    {
+    "decrease volume": {
         "canonical": "VOLUME_DOWN",
         "category": "music control",
         "priority": 1,
-        "description": "decrease volume"
+        "pattern": [
+            {"LOWER": "decrease"},
+            {"LOWER": "volume"}
+        ]
     },
-    {
+    "mute audio": {
         "canonical": "MUTE_AUDIO",
         "category": "music control",
         "priority": 1,
-        "description": "mute audio"
+        "pattern": [
+            {"LOWER": "mute"},
+            {"LOWER": "audio"}
+        ]
     },
-    {
+    "unmute audio": {
         "canonical": "UNMUTE_AUDIO",
         "category": "music control",
         "priority": 1,
-        "description": "unmute audio"
+        "pattern": [
+            {"LOWER": "unmute"},
+            {"LOWER": "audio"}
+        ]
     }
-]
+}

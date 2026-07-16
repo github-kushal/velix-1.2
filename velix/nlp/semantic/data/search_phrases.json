@@ -1,44 +1,78 @@
-[
-    {
-        "canonical": "search for",
-        "category": "SEARCH",
+{
+    
+    "search for": {
+        "canonical": "SEARCH_FOR",
+        "category": "search",
         "priority": 1,
-        "description": "search for"
+        "pattern": [
+            {"LOWER": "search"},
+            {"LOWER": "for"}
+        ]
     },
-    {
-        "canonical": "find",
-        "category": "SEARCH",
+
+
+    "find": {
+        "canonical": "FIND",
+        "category": "find",
         "priority": 1,
-        "description": "find"
+        "pattern": [
+            {"LOWER": "find"}
+        ]
     },
-    {
-        "canonical": "look for",
-        "category": "SEARCH",
+
+
+    "look for": {
+        "canonical": "LOOK_FOR",
+        "category": "look",
         "priority": 1,
-        "description": "look for"
+        "pattern": [
+            {"LOWER": "look"},
+            {"LOWER": "for"}
+        ]
     },
-    {
-        "canonical": "search online",
-        "category": "WEB_SEARCH",
+
+
+    "search online": {
+        "canonical": "SEARCH_ONLINE",
+        "category": "search",
         "priority": 1,
-        "description": "search online"
+        "pattern": [
+            {"LOWER": "search"},
+            {"LOWER": "online"}
+        ]
     },
-    {
-        "canonical": "search google",
-        "category": "GOOGLE_SEARCH",
+
+
+    "search google": {
+        "canonical": "SEARCH_GOOGLE",
+        "category": "google",
         "priority": 1,
-        "description": "search google"
+        "pattern": [
+            {"LOWER": "search"},
+            {"LOWER": "google"}
+        ]
     },
-    {
-        "canonical": "search youtube",
-        "category": "YOUTUBE_SEARCH",
+
+
+    "search youtube": {
+        "canonical": "SEARCH_YOUTUBE",
+        "category": "youtube",
         "priority": 1,
-        "description": "search youtube"
+        "pattern": [
+            {"LOWER": "search"},
+            {"LOWER": "youtube"}
+        ]
     },
-    {
-        "canonical": "search wikipedia",
-        "category": "WIKIPEDIA_SEARCH",
+
+
+    "search wikipedia": {
+        "canonical": "SEARCH_WIKIPEDIA",
+        "category": "wikipedia",
         "priority": 1,
-        "description": "search wikipedia"
+        "pattern": [
+            {"LOWER": "search"},
+            {"LOWER": "wikipedia"}
+        ]
     }
-]
+    
+}

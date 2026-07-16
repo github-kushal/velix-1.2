@@ -14,18 +14,21 @@ class Validator:
 
     def validate(self, content: str, file_type: str) -> ValidationResult:
 
-        validators = {
-            "json": self._validate_json,
-            "py": self._validate_python,
-            "txt": self._validate_text,
-            "md": self._validate_text,
-            "yaml": self._validate_text,
-            "yml": self._validate_text,
-        }
+        try:
+            validators = {
+                "json": self._validate_json,
+                "py": self._validate_python,
+                "txt": self._validate_text,
+                "md": self._validate_text,
+                "yaml": self._validate_text,
+                "yml": self._validate_text,
+            }
 
-        validator = validators.get(file_type, self._validate_unknown)
+            validator = validators.get(file_type, self._validate_unknown)
 
-        return validator(content)
+            return validator(content)
+        except Exception as e:
+            raise e
 
 
     # ---------------- JSON ---------------- #

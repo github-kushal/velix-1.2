@@ -1,32 +1,54 @@
 {
     "create event": {
-        "canonical": "create event",
+        "canonical": "CREATE_EVENT",
         "category": "calendar",
         "priority": 1,
+        "pattern": [
+            {"LOWER": "create"},
+            {"LOWER": "event"}
+        ],
         "description": "create event"
     },
     "schedule meeting": {
-        "canonical": "schedule meeting",
+        "canonical": "SCHEDULE_MEETING",
         "category": "calendar",
         "priority": 1,
+        "pattern": [
+            {"LOWER": "schedule"},
+            {"LOWER": "meeting"}
+        ],
         "description": "schedule meeting"
     },
     "cancel meeting": {
-        "canonical": "cancel meeting",
+        "canonical": "CANCEL_MEETING",
         "category": "calendar",
         "priority": 1,
+        "pattern": [
+            {"LOWER": "cancel"},
+            {"LOWER": "meeting"}
+        ],
         "description": "cancel meeting"
     },
     "show calendar": {
-        "canonical": "show calendar",
+        "canonical": "SHOW_CALENDAR",
         "category": "calendar",
         "priority": 1,
+        "pattern": [
+            {"LOWER": "show"},
+            {"LOWER": "calendar"}
+        ],
         "description": "show calendar"
     },
     "what's on my calendar": {
-        "canonical": "what's on my calendar",
+        "canonical": "WHATS_ON_MY_CALENDAR",
         "category": "calendar",
         "priority": 1,
+        "pattern": [
+            {"LOWER": "what's"},
+            {"LOWER": "on"},
+            {"LOWER": "my"},
+            {"LOWER": "calendar"}
+        ],
         "description": "what's on my calendar"
     }
 }

@@ -1,68 +1,160 @@
-[
-    {
-        "canonical": "open application",
+{
+    "open application": {
+        "canonical": "OPEN_APPLICATION",
         "category": "APPLICATION",
         "priority": 1,
-        "description": "Open the application"
+        "pattern": [
+            {"LOWER": "open"},
+            {"LOWER": "application"}
+        ]
     },
-    {
-        "canonical": "launch application",
+    "launch application": {
+        "canonical": "LAUNCH_APPLICATION",
         "category": "APPLICATION",
         "priority": 1,
-        "description": "Launch the application"
+        "pattern": [
+            {"LOWER": "launch"},
+            {"LOWER": "application"}
+        ]
     },
-    {
-        "canonical": "start application",
+    "close application": {
+        "canonical": "CLOSE_APPLICATION",
         "category": "APPLICATION",
         "priority": 1,
-        "description": "Start the application"
+        "pattern": [
+            {"LOWER": "close"},
+            {"LOWER": "application"}
+        ]
     },
-    {
-        "canonical": "run application",
+    "minimize application": {
+        "canonical": "MINIMIZE_APPLICATION",
         "category": "APPLICATION",
         "priority": 1,
-        "description": "Run the application"
+        "pattern": [
+            {"LOWER": "minimize"},
+            {"LOWER": "application"}
+        ]
     },
-    {
-        "canonical": "close application",
+    "maximize application": {
+        "canonical": "MAXIMIZE_APPLICATION",
         "category": "APPLICATION",
         "priority": 1,
-        "description": "Close the application"
+        "pattern": [
+            {"LOWER": "maximize"},
+            {"LOWER": "application"}
+        ]
     },
-    {
-        "canonical": "exit application",
+    "restore application": {
+        "canonical": "RESTORE_APPLICATION",
         "category": "APPLICATION",
         "priority": 1,
-        "description": "Exit the application"
+        "pattern": [
+            {"LOWER": "restore"},
+            {"LOWER": "application"}
+        ]
     },
-    {
-        "canonical": "quit application",
+    "switch application": {
+        "canonical": "SWITCH_APPLICATION",
         "category": "APPLICATION",
         "priority": 1,
-        "description": "Quit the application"
+        "pattern": [
+            {"LOWER": "switch"},
+            {"LOWER": "application"}
+        ]
     },
-    {
-        "canonical": "restart application",
+    "quit application": {
+        "canonical": "QUIT_APPLICATION",
         "category": "APPLICATION",
         "priority": 1,
-        "description": "Restart the application"
+        "pattern": [
+            {"LOWER": "quit"},
+            {"LOWER": "application"}
+        ]
     },
-    {
-        "canonical": "minimize window",
-        "category": "WINDOW",
+    "force quit application": {
+        "canonical": "FORCE_QUIT_APPLICATION",
+        "category": "APPLICATION",
         "priority": 1,
-        "description": "Minimize the window"
+        "pattern": [
+            {"LOWER": "force"},
+            {"LOWER": "quit"},
+            {"LOWER": "application"}
+        ]
     },
-    {
-        "canonical": "maximize window",
-        "category": "WINDOW",
+    "reopen application": {
+        "canonical": "REOPEN_APPLICATION",
+        "category": "APPLICATION",
         "priority": 1,
-        "description": "Maximize the window"
+        "pattern": [
+            {"LOWER": "reopen"},
+            {"LOWER": "application"}
+        ]
     },
-    {
-        "canonical": "restore window",
-        "category": "WINDOW",
+    "hide application": {
+        "canonical": "HIDE_APPLICATION",
+        "category": "APPLICATION",
         "priority": 1,
-        "description": "Restore the window"
+        "pattern": [
+            {"LOWER": "hide"},
+            {"LOWER": "application"}
+        ]
+    },
+    "unhide application": {
+        "canonical": "UNHIDE_APPLICATION",
+        "category": "APPLICATION",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "unhide"},
+            {"LOWER": "application"}
+        ]
+    },
+    "bring application to front": {
+        "canonical": "BRING_APPLICATION_TO_FRONT",
+        "category": "APPLICATION",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "bring"},
+            {"LOWER": "application"},
+            {"LOWER": "to"},
+            {"LOWER": "front"}
+        ]
+    },
+    "move application to background": {
+        "canonical": "MOVE_APPLICATION_TO_BACKGROUND",
+        "category": "APPLICATION",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "move"},
+            {"LOWER": "application"},
+            {"LOWER": "to"},
+            {"LOWER": "background"}
+        ]
+    },
+    "application settings": {
+        "canonical": "APPLICATION_SETTINGS",
+        "category": "APPLICATION",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "application"},
+            {"LOWER": "settings"}
+        ]
+    },
+    "application preferences": {
+        "canonical": "APPLICATION_PREFERENCES",
+        "category": "APPLICATION",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "application"},
+            {"LOWER": "preferences"}
+        ]
+    },
+    "application options": {
+        "canonical": "APPLICATION_OPTIONS",
+        "category": "APPLICATION",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "application"},
+            {"LOWER": "options"}
+        ]
     }
-]
+}
