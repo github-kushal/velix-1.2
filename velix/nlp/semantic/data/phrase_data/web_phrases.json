@@ -1,0 +1,68 @@
+{
+    "open website": {
+        "canonical": "OPEN_WEBSITE",
+        "action": "OPEN",
+        "category": "Navigation",
+        "priority": 1,
+        "description": "open website",
+        "pattern": [
+            {"LOWER": "open"},
+            {"LOWER": "website"}
+        ]
+    },
+    "visit website": {
+        "canonical": "VISIT_WEBSITE",
+        "action": "OPEN",
+        "category": "Navigation",
+        "priority": 1,
+        "description": "visit website",
+        "pattern": [
+            {"LOWER": "visit"},
+            {"LOWER": "website"}
+        ]
+    },
+    "download file": {
+        "canonical": "DOWNLOAD_FILE",
+        "action": "DOWNLOAD",
+        "category": "File Management",
+        "priority": 1,
+        "description": "download file",
+        "pattern": [
+            {"LOWER": "download"},
+            {"LOWER": "file"}
+        ]
+    },
+    "upload file": {
+        "canonical": "UPLOAD_FILE",
+        "action": "UPLOAD",
+        "category": "File Management",
+        "priority": 1,
+        "description": "upload file",
+        "pattern": [
+            {"LOWER": "upload"},
+            {"LOWER": "file"}
+        ]
+    },
+    "open link": {
+        "canonical": "OPEN_LINK",
+        "action": "OPEN",
+        "category": "Navigation",
+        "priority": 1,
+        "description": "open link",
+        "pattern": [
+            {"LOWER": "open"},
+            {"LOWER": "link"}
+        ]
+    },
+    "copy link": {
+        "canonical": "COPY_LINK",
+        "action": "COPY",
+        "category": "Clipboard",
+        "priority": 1,
+        "description": "copy link",
+        "pattern": [
+            {"LOWER": "copy"},
+            {"LOWER": "link"}
+        ]
+    }
+}

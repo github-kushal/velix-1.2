@@ -1,0 +1,217 @@
+{
+    "email": {
+        "id": "email",
+        "canonical": "Email",
+        "entity_type": "CONTACT",
+        "aliases": [
+            "email address",
+            "mail",
+            "electronic mail"
+        ],
+        "priority": 1,
+        "description": "Digital contact method using email addresses"
+    },
+    "phone": {
+        "id": "phone",
+        "canonical": "Phone",
+        "entity_type": "CONTACT",
+        "aliases": [
+            "phone number",
+            "mobile",
+            "landline",
+            "telephone"
+        ],
+        "priority": 1,
+        "description": "Voice communication contact method"
+    },
+    "address": {
+        "id": "address",
+        "canonical": "Address",
+        "entity_type": "CONTACT",
+        "aliases": [
+            "postal address",
+            "mailing address",
+            "residence"
+        ],
+        "priority": 1,
+        "description": "Physical location contact information"
+    },
+    "facebook": {
+        "id": "facebook",
+        "canonical": "Facebook",
+        "entity_type": "CONTACT",
+        "aliases": [
+            "facebook profile",
+            "fb"
+        ],
+        "priority": 1,
+        "description": "Social media contact platform"
+    },
+    "twitter": {
+        "id": "twitter",
+        "canonical": "Twitter",
+        "entity_type": "CONTACT",
+        "aliases": [
+            "twitter profile",
+            "x"
+        ],
+        "priority": 1,
+        "description": "Social media contact platform"
+    },
+    "instagram": {
+        "id": "instagram",
+        "canonical": "Instagram",
+        "entity_type": "CONTACT",
+        "aliases": [
+            "instagram profile"
+        ],
+        "priority": 1,
+        "description": "Social media contact platform"
+    },
+    "linkedin": {
+        "id": "linkedin",
+        "canonical": "LinkedIn",
+        "entity_type": "CONTACT",
+        "aliases": [
+            "linkedin profile"
+        ],
+        "priority": 1,
+        "description": "Professional networking platform"
+    },
+    "work_email": {
+        "id": "work_email",
+        "canonical": "Work Email",
+        "entity_type": "CONTACT",
+        "aliases": [
+            "business email",
+            "professional email"
+        ],
+        "priority": 1,
+        "description": "Email contact for professional purposes"
+    },
+    "personal_email": {
+        "id": "personal_email",
+        "canonical": "Personal Email",
+        "entity_type": "CONTACT",
+        "aliases": [
+            "private email"
+        ],
+        "priority": 1,
+        "description": "Email contact for personal purposes"
+    },
+    "business_card": {
+        "id": "business_card",
+        "canonical": "Business Card",
+        "entity_type": "CONTACT",
+        "aliases": [
+            "company card",
+            "professional card"
+        ],
+        "priority": 1,
+        "description": "Physical contact information medium"
+    },
+    "whatsapp": {
+        "id": "whatsapp",
+        "canonical": "WhatsApp",
+        "entity_type": "CONTACT",
+        "aliases": [
+            "whatsapp profile"
+        ],
+        "priority": 1,
+        "description": "Messaging contact platform"
+    },
+    "telegram": {
+        "id": "telegram",
+        "canonical": "Telegram",
+        "entity_type": "CONTACT",
+        "aliases": [
+            "telegram profile"
+        ],
+        "priority": 1,
+        "description": "Messaging contact platform"
+    },
+    "skype": {
+        "id": "skype",
+        "canonical": "Skype",
+        "entity_type": "CONTACT",
+        "aliases": [
+            "skype profile"
+        ],
+        "priority": 1,
+        "description": "Voice/video communication platform"
+    },
+    "viber": {
+        "id": "viber",
+        "canonical": "Viber",
+        "entity_type": "CONTACT",
+        "aliases": [
+            "viber profile"
+        ],
+        "priority": 1,
+        "description": "Messaging contact platform"
+    },
+    "snapchat": {
+        "id": "snapchat",
+        "canonical": "Snapchat",
+        "entity_type": "CONTACT",
+        "aliases": [
+            "snapchat profile"
+        ],
+        "priority": 1,
+        "description": "Social media contact platform"
+    },
+    "messenger": {
+        "id": "messenger",
+        "canonical": "Messenger",
+        "entity_type": "CONTACT",
+        "aliases": [
+            "facebook messenger"
+        ],
+        "priority": 1,
+        "description": "Messaging contact platform"
+    },
+    "contact_form": {
+        "id": "contact_form",
+        "canonical": "Contact Form",
+        "entity_type": "CONTACT",
+        "aliases": [
+            "feedback form",
+            "inquiry form"
+        ],
+        "priority": 1,
+        "description": "Web-based contact interface"
+    },
+    "directory": {
+        "id": "directory",
+        "canonical": "Directory",
+        "entity_type": "CONTACT",
+        "aliases": [
+            "phone book",
+            "address book"
+        ],
+        "priority": 1,
+        "description": "Organized contact information collection"
+    },
+    "contact_list": {
+        "id": "contact_list",
+        "canonical": "Contact List",
+        "entity_type": "CONTACT",
+        "aliases": [
+            "contact database",
+            "contact directory"
+        ],
+        "priority": 1,
+        "description": "Structured contact information collection"
+    },
+    "contact_manager": {
+        "id": "contact_manager",
+        "canonical": "Contact Manager",
+        "entity_type": "CONTACT",
+        "aliases": [
+            "address book manager",
+            "contact organizer"
+        ],
+        "priority": 1,
+        "description": "Contact information management tool"
+    }
+}

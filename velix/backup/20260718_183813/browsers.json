@@ -1,0 +1,147 @@
+{
+    "google_chrome": {
+        "canonical": "Google Chrome",
+        "entity_type": "browsers",
+        "aliases": [
+            "chrome",
+            "google chrome",
+            "chrome browser"
+        ],
+        "priority": 1,
+        "description": "Google web browser"
+    },
+    "mozilla_firefox": {
+        "canonical": "Mozilla Firefox",
+        "entity_type": "browsers",
+        "aliases": [
+            "firefox",
+            "mozilla firefox",
+            "mozilla"
+        ],
+        "priority": 1,
+        "description": "Mozilla web browser"
+    },
+    "microsoft_edge": {
+        "canonical": "Microsoft Edge",
+        "entity_type": "browsers",
+        "aliases": [
+            "edge",
+            "microsoft edge",
+            "edge browser"
+        ],
+        "priority": 1,
+        "description": "Microsoft web browser"
+    },
+    "apple_safari": {
+        "canonical": "Apple Safari",
+        "entity_type": "browsers",
+        "aliases": [
+            "safari",
+            "apple safari"
+        ],
+        "priority": 1,
+        "description": "Apple web browser"
+    },
+    "opera": {
+        "canonical": "Opera",
+        "entity_type": "browsers",
+        "aliases": [
+            "opera"
+        ],
+        "priority": 1,
+        "description": "Opera web browser"
+    },
+    "brave_browser": {
+        "canonical": "Brave Browser",
+        "entity_type": "browsers",
+        "aliases": [
+            "brave",
+            "brave browser"
+        ],
+        "priority": 1,
+        "description": "Privacy-focused web browser"
+    },
+    "vivaldi": {
+        "canonical": "Vivaldi",
+        "entity_type": "browsers",
+        "aliases": [
+            "vivaldi"
+        ],
+        "priority": 1,
+        "description": "Customizable web browser"
+    },
+    "tor_browser": {
+        "canonical": "Tor Browser",
+        "entity_type": "browsers",
+        "aliases": [
+            "tor",
+            "tor browser"
+        ],
+        "priority": 1,
+        "description": "Anonymous web browsing tool"
+    },
+    "internet_explorer": {
+        "canonical": "Internet Explorer",
+        "entity_type": "browsers",
+        "aliases": [
+            "ie",
+            "internet explorer"
+        ],
+        "priority": 1,
+        "description": "Legacy Microsoft web browser"
+    },
+    "samsung_internet": {
+        "canonical": "Samsung Internet",
+        "entity_type": "browsers",
+        "aliases": [
+            "samsung internet"
+        ],
+        "priority": 1,
+        "description": "Samsung mobile web browser"
+    },
+    "uc_browser": {
+        "canonical": "UC Browser",
+        "entity_type": "browsers",
+        "aliases": [
+            "uc browser"
+        ],
+        "priority": 1,
+        "description": "Mobile-optimized web browser"
+    },
+    "maxthon": {
+        "canonical": "Maxthon",
+        "entity_type": "browsers",
+        "aliases": [
+            "maxthon"
+        ],
+        "priority": 1,
+        "description": "Dual-core web browser"
+    },
+    "avast_secure_browser": {
+        "canonical": "Avast Secure Browser",
+        "entity_type": "browsers",
+        "aliases": [
+            "avast secure browser"
+        ],
+        "priority": 1,
+        "description": "Antivirus-integrated web browser"
+    },
+    "yandex_browser": {
+        "canonical": "Yandex Browser",
+        "entity_type": "browsers",
+        "aliases": [
+            "yandex browser"
+        ],
+        "priority": 1,
+        "description": "Russian search engine web browser"
+    },
+    "dolphin_browser": {
+        "canonical": "Dolphin Browser",
+        "entity_type": "browsers",
+        "aliases": [
+            "dolphin browser"
+        ],
+        "priority": 1,
+        "description": "Mobile web browser with gesture controls"
+    }
+}

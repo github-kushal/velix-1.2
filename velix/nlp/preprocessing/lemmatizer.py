@@ -1,5 +1,6 @@
 def lemmatizer(doc):
 
-    lemma = [token.lemma_ for token in doc]
+    return [token.lemma_ for token in doc]
 
-    print(f"Lemmatized: {lemma}")
+    # print(f"Lemmatized: {lemma}")
+    

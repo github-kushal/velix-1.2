@@ -1,0 +1,169 @@
+{
+    "shutdown computer": {
+        "canonical": "shutdown computer",
+        "category": "SYSTEM",
+        "priority": 1,
+        "description": "shutdown computer",
+        "pattern": [
+            {"LOWER": "shutdown"},
+            {"LOWER": "computer"}
+        ],
+        "action": "SHUTDOWN"
+    },
+    "restart computer": {
+        "canonical": "restart computer",
+        "category": "SYSTEM",
+        "priority": 1,
+        "description": "restart computer",
+        "pattern": [
+            {"LOWER": "restart"},
+            {"LOWER": "computer"}
+        ],
+        "action": "RESTART"
+    },
+    "sleep computer": {
+        "canonical": "sleep computer",
+        "category": "SYSTEM",
+        "priority": 1,
+        "description": "sleep computer",
+        "pattern": [
+            {"LOWER": "sleep"},
+            {"LOWER": "computer"}
+        ],
+        "action": "SLEEP"
+    },
+    "lock computer": {
+        "canonical": "lock computer",
+        "category": "SYSTEM",
+        "priority": 1,
+        "description": "lock computer",
+        "pattern": [
+            {"LOWER": "lock"},
+            {"LOWER": "computer"}
+        ],
+        "action": "LOCK"
+    },
+    "log off": {
+        "canonical": "log off",
+        "category": "SYSTEM",
+        "priority": 1,
+        "description": "log off",
+        "pattern": [
+            {"LOWER": "log"},
+            {"LOWER": "off"}
+        ],
+        "action": "LOG_OUT"
+    },
+    "increase volume": {
+        "canonical": "increase volume",
+        "category": "AUDIO",
+        "priority": 1,
+        "description": "increase volume",
+        "pattern": [
+            {"LOWER": "increase"},
+            {"LOWER": "volume"}
+        ],
+        "action": "INCREASE"
+    },
+    "decrease volume": {
+        "canonical": "decrease volume",
+        "category": "AUDIO",
+        "priority": 1,
+        "description": "decrease volume",
+        "pattern": [
+            {"LOWER": "decrease"},
+            {"LOWER": "volume"}
+        ],
+        "action": "DECREASE"
+    },
+    "mute volume": {
+        "canonical": "mute volume",
+        "category": "AUDIO",
+        "priority": 1,
+        "description": "mute volume",
+        "pattern": [
+            {"LOWER": "mute"},
+            {"LOWER": "volume"}
+        ],
+        "action": "MUTE"
+    },
+    "unmute volume": {
+        "canonical": "unmute volume",
+        "category": "AUDIO",
+        "priority": 1,
+        "description": "unmute volume",
+        "pattern": [
+            {"LOWER": "unmute"},
+            {"LOWER": "volume"}
+        ],
+        "action": "UNMUTE"
+    },
+    "increase brightness": {
+        "canonical": "increase brightness",
+        "category": "DISPLAY",
+        "priority": 1,
+        "description": "increase brightness",
+        "pattern": [
+            {"LOWER": "increase"},
+            {"LOWER": "brightness"}
+        ],
+        "action": "INCREASE"
+    },
+    "decrease brightness": {
+        "canonical": "decrease brightness",
+        "category": "DISPLAY",
+        "priority": 1,
+        "description": "decrease brightness",
+        "pattern": [
+            {"LOWER": "decrease"},
+            {"LOWER": "brightness"}
+        ],
+        "action": "DECREASE"
+    },
+    "turn on wifi": {
+        "canonical": "turn on wifi",
+        "category": "NETWORK",
+        "priority": 1,
+        "description": "turn on wifi",
+        "pattern": [
+            {"LOWER": "turn"},
+            {"LOWER": "on"},
+            {"LOWER": "wifi"}
+        ],
+        "action": "TURN_ON"
+    },
+    "turn off wifi": {
+        "canonical": "turn off wifi",
+        "category": "NETWORK",
+        "priority": 1,
+        "description": "turn off wifi",
+        "pattern": [
+            {"LOWER": "turn"},
+            {"LOWER": "off"},
+            {"LOWER": "wifi"}
+        ],
+        "action": "TURN_OFF"
+    },
+    "enable bluetooth": {
+        "canonical": "enable bluetooth",
+        "category": "NETWORK",
+        "priority": 1,
+        "description": "enable bluetooth",
+        "pattern": [
+            {"LOWER": "enable"},
+            {"LOWER": "bluetooth"}
+        ],
+        "action": "ENABLE"
+    },
+    "disable bluetooth": {
+        "canonical": "disable bluetooth",
+        "category": "NETWORK",
+        "priority": 1,
+        "description": "disable bluetooth",
+        "pattern": [
+            {"LOWER": "disable"},
+            {"LOWER": "bluetooth"}
+        ],
+        "action": "DISABLE"
+    }
+}

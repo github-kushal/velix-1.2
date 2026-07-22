@@ -1,0 +1,101 @@
+{
+    "google_chrome": {
+        "id": "google_chrome",
+        "canonical": "Google Chrome",
+        "entity_type": "APPLICATION",
+        "aliases": [
+            "chrome",
+            "google chrome"
+        ],
+        "priority": 1,
+        "description": "Google web browser"
+    },
+    "visual_studio_code": {
+        "id": "visual_studio_code",
+        "canonical": "Visual Studio Code",
+        "entity_type": "APPLICATION",
+        "aliases": [
+            "code",
+            "vs code",
+            "vscode",
+            "visual studio code"
+        ],
+        "priority": 1,
+        "description": "Microsoft source code editor"
+    },
+    "microsoft_word": {
+        "id": "microsoft_word",
+        "canonical": "Microsoft Word",
+        "entity_type": "APPLICATION",
+        "aliases": [
+            "word",
+            "microsoft word"
+        ],
+        "priority": 1,
+        "description": "Document editor"
+    },
+    "vlc_media_player": {
+        "id": "vlc_media_player",
+        "canonical": "VLC Media Player",
+        "entity_type": "APPLICATION",
+        "aliases": [
+            "vlc",
+            "vlc media player"
+        ],
+        "priority": 1,
+        "description": "Media player"
+    },
+    "notepadplusplus": {
+        "id": "notepadplusplus",
+        "canonical": "Notepad++",
+        "entity_type": "APPLICATION",
+        "aliases": [
+            "notepad++",
+            "notepad plus plus"
+        ],
+        "priority": 1,
+        "description": "Text editor"
+    },
+    "adobe_reader": {
+        "id": "adobe_reader",
+        "canonical": "Adobe Reader",
+        "entity_type": "APPLICATION",
+        "aliases": [
+            "acrobat reader",
+            "adobe reader"
+        ],
+        "priority": 1,
+        "description": "PDF reader"
+    },
+    "firefox": {
+        "id": "firefox",
+        "canonical": "Firefox",
+        "entity_type": "APPLICATION",
+        "aliases": [
+            "firefox"
+        ],
+        "priority": 1,
+        "description": "Open-source web browser"
+    },
+    "vlc": {
+        "id": "vlc",
+        "canonical": "VLC Media Player",
+        "entity_type": "APPLICATION",
+        "aliases": [
+            "vlc",
+            "vlc media player"
+        ],
+        "priority": 1,
+        "description": "Media player"
+    },
+    "spotify": {
+        "id": "spotify",
+        "canonical": "Spotify",
+        "entity_type": "APPLICATION",
+        "aliases": [
+            "spotify"
+        ],
+        "priority": 1,
+        "description": "Music streaming service"
+    }
+}

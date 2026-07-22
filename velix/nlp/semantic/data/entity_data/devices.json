@@ -1,0 +1,666 @@
+{
+    "computer": {
+        "id": "computer",
+        "canonical": "Computer",
+        "entity_type": "devices",
+        "aliases": [
+            "pc",
+            "desktop",
+            "workstation",
+            "server",
+            "mainframe"
+        ],
+        "priority": 1,
+        "description": "General-purpose computing device"
+    },
+    "laptop": {
+        "id": "laptop",
+        "canonical": "Laptop",
+        "entity_type": "devices",
+        "aliases": [
+            "notebook",
+            "portable computer",
+            "ultrabook",
+            "chromebook"
+        ],
+        "priority": 1,
+        "description": "Portable computing device with integrated display"
+    },
+    "tablet": {
+        "id": "tablet",
+        "canonical": "Tablet",
+        "entity_type": "devices",
+        "aliases": [
+            "tablet pc",
+            "touch tablet",
+            "slate",
+            "ipad"
+        ],
+        "priority": 1,
+        "description": "Portable display with touch interface"
+    },
+    "smartphone": {
+        "id": "smartphone",
+        "canonical": "Smartphone",
+        "entity_type": "devices",
+        "aliases": [
+            "cell phone",
+            "mobile phone",
+            "smart mobile",
+            "phone"
+        ],
+        "priority": 1,
+        "description": "Mobile communication device with computing capabilities"
+    },
+    "router": {
+        "id": "router",
+        "canonical": "Router",
+        "entity_type": "devices",
+        "aliases": [
+            "network router",
+            "wifi router",
+            "modem router",
+            "gateway"
+        ],
+        "priority": 1,
+        "description": "Network routing device"
+    },
+    "printer": {
+        "id": "printer",
+        "canonical": "Printer",
+        "entity_type": "devices",
+        "aliases": [
+            "inkjet printer",
+            "laser printer",
+            "multi-function printer",
+            "printer"
+        ],
+        "priority": 1,
+        "description": "Document output device"
+    },
+    "smartwatch": {
+        "id": "smartwatch",
+        "canonical": "Smartwatch",
+        "entity_type": "devices",
+        "aliases": [
+            "wearable computer",
+            "smart band",
+            "fitness tracker",
+            "watch"
+        ],
+        "priority": 1,
+        "description": "Wearable computing device"
+    },
+    "camera": {
+        "id": "camera",
+        "canonical": "Camera",
+        "entity_type": "devices",
+        "aliases": [
+            "digital camera",
+            "dslr camera",
+            "mirrorless camera",
+            "camera"
+        ],
+        "priority": 1,
+        "description": "Image capture device"
+    },
+    "projector": {
+        "id": "projector",
+        "canonical": "Projector",
+        "entity_type": "devices",
+        "aliases": [
+            "video projector",
+            "screen projector",
+            "projector",
+            "beam projector"
+        ],
+        "priority": 1,
+        "description": "Visual display device"
+    },
+    "sound_system": {
+        "id": "sound_system",
+        "canonical": "Sound System",
+        "entity_type": "devices",
+        "aliases": [
+            "audio system",
+            "sound equipment",
+            "speaker system",
+            "sound setup"
+        ],
+        "priority": 1,
+        "description": "Audio output device system"
+    },
+    "game_console": {
+        "id": "game_console",
+        "canonical": "Game Console",
+        "entity_type": "devices",
+        "aliases": [
+            "console",
+            "video game console",
+            "gaming console",
+            "console system"
+        ],
+        "priority": 1,
+        "description": "Entertainment computing device"
+    },
+    "smart_tv": {
+        "id": "smart_tv",
+        "canonical": "Smart TV",
+        "entity_type": "devices",
+        "aliases": [
+            "internet TV",
+            "connected TV",
+            "smart television",
+            "tv"
+        ],
+        "priority": 1,
+        "description": "Internet-capable television"
+    },
+    "e_reader": {
+        "id": "e_reader",
+        "canonical": "E-Reader",
+        "entity_type": "devices",
+        "aliases": [
+            "electronic reader",
+            "book reader",
+            "tablet reader",
+            "kindle"
+        ],
+        "priority": 1,
+        "description": "Digital book reading device"
+    },
+    "fitness_tracker": {
+        "id": "fitness_tracker",
+        "canonical": "Fitness Tracker",
+        "entity_type": "devices",
+        "aliases": [
+            "activity tracker",
+            "smart tracker",
+            "wearable tracker",
+            "fitness band"
+        ],
+        "priority": 1,
+        "description": "Health and activity monitoring device"
+    },
+    "drone": {
+        "id": "drone",
+        "canonical": "Drone",
+        "entity_type": "devices",
+        "aliases": [
+            "unmanned aerial vehicle",
+            "quadcopter",
+            "uav",
+            "drone aircraft"
+        ],
+        "priority": 1,
+        "description": "Autonomous flying vehicle"
+    },
+    "scanner": {
+        "id": "scanner",
+        "canonical": "Scanner",
+        "entity_type": "devices",
+        "aliases": [
+            "document scanner",
+            "image scanner",
+            "optical scanner",
+            "scan device"
+        ],
+        "priority": 1,
+        "description": "Data capture device"
+    },
+    "monitor": {
+        "id": "monitor",
+        "canonical": "Monitor",
+        "entity_type": "devices",
+        "aliases": [
+            "display",
+            "screen",
+            "monitor",
+            "visual display"
+        ],
+        "priority": 1,
+        "description": "Visual output device"
+    },
+    "keyboard": {
+        "id": "keyboard",
+        "canonical": "Keyboard",
+        "entity_type": "devices",
+        "aliases": [
+            "keypad",
+            "qwerty keyboard",
+            "laptop keyboard",
+            "keyboard"
+        ],
+        "priority": 1,
+        "description": "Input device for text entry"
+    },
+    "mouse": {
+        "id": "mouse",
+        "canonical": "Mouse",
+        "entity_type": "devices",
+        "aliases": [
+            "computer mouse",
+            "trackball",
+            "pointing device",
+            "mouse"
+        ],
+        "priority": 1,
+        "description": "Input device for cursor control"
+    },
+    "smart_home_device": {
+        "id": "smart_home_device",
+        "canonical": "Smart Home Device",
+        "entity_type": "devices",
+        "aliases": [
+            "home automation device",
+            "smart appliance",
+            "connected home device",
+            "iot device"
+        ],
+        "priority": 1,
+        "description": "Network-connected home appliance"
+    },
+    "smart_speaker": {
+        "id": "smart_speaker",
+        "canonical": "Smart Speaker",
+        "entity_type": "devices",
+        "aliases": [
+            "voice assistant speaker",
+            "smart sound system",
+            "voice speaker",
+            "assistant speaker"
+        ],
+        "priority": 1,
+        "description": "Voice-activated audio device"
+    },
+    "smart_thermostat": {
+        "id": "smart_thermostat",
+        "canonical": "Smart Thermostat",
+        "entity_type": "devices",
+        "aliases": [
+            "connected thermostat",
+            "smart heating system",
+            "temperature controller",
+            "home thermostat"
+        ],
+        "priority": 1,
+        "description": "Automated temperature control device"
+    },
+    "smart_lock": {
+        "id": "smart_lock",
+        "canonical": "Smart Lock",
+        "entity_type": "devices",
+        "aliases": [
+            "keyless lock",
+            "connected lock",
+            "smart door lock",
+            "digital lock"
+        ],
+        "priority": 1,
+        "description": "Network-enabled door locking system"
+    },
+    "smart_bulb": {
+        "id": "smart_bulb",
+        "canonical": "Smart Bulb",
+        "entity_type": "devices",
+        "aliases": [
+            "connected bulb",
+            "smart lighting",
+            "internet bulb",
+            "smart light"
+        ],
+        "priority": 1,
+        "description": "Network-controlled lighting device"
+    },
+    "smart_plug": {
+        "id": "smart_plug",
+        "canonical": "Smart Plug",
+        "entity_type": "devices",
+        "aliases": [
+            "smart socket",
+            "connected plug",
+            "smart power outlet",
+            "smart adapter"
+        ],
+        "priority": 1,
+        "description": "Network-enabled power outlet"
+    },
+    "smart_switch": {
+        "id": "smart_switch",
+        "canonical": "Smart Switch",
+        "entity_type": "devices",
+        "aliases": [
+            "connected switch",
+            "smart power switch",
+            "smart outlet",
+            "smart circuit"
+        ],
+        "priority": 1,
+        "description": "Network-controlled electrical switch"
+    },
+    "smart_camera": {
+        "id": "smart_camera",
+        "canonical": "Smart Camera",
+        "entity_type": "devices",
+        "aliases": [
+            "network camera",
+            "ip camera",
+            "connected camera",
+            "smart surveillance"
+        ],
+        "priority": 1,
+        "description": "Network-enabled video capture device"
+    },
+    "smart_doorbell": {
+        "id": "smart_doorbell",
+        "canonical": "Smart Doorbell",
+        "entity_type": "devices",
+        "aliases": [
+            "connected doorbell",
+            "smart bell",
+            "video doorbell",
+            "smart entry"
+        ],
+        "priority": 1,
+        "description": "Network-enabled doorbell system"
+    },
+    "smart_fridge": {
+        "id": "smart_fridge",
+        "canonical": "Smart Fridge",
+        "entity_type": "devices",
+        "aliases": [
+            "connected fridge",
+            "smart refrigerator",
+            "internet fridge",
+            "smart appliance"
+        ],
+        "priority": 1,
+        "description": "Network-enabled refrigerator"
+    },
+    "smart_oven": {
+        "id": "smart_oven",
+        "canonical": "Smart Oven",
+        "entity_type": "devices",
+        "aliases": [
+            "connected oven",
+            "smart cooking appliance",
+            "internet oven",
+            "smart kitchen"
+        ],
+        "priority": 1,
+        "description": "Network-enabled cooking appliance"
+    },
+    "smart_washing_machine": {
+        "id": "smart_washing_machine",
+        "canonical": "Smart Washing Machine",
+        "entity_type": "devices",
+        "aliases": [
+            "connected washer",
+            "smart laundry",
+            "internet washer",
+            "smart appliance"
+        ],
+        "priority": 1,
+        "description": "Network-enabled washing machine"
+    },
+    "smart_dryer": {
+        "id": "smart_dryer",
+        "canonical": "Smart Dryer",
+        "entity_type": "devices",
+        "aliases": [
+            "connected dryer",
+            "smart laundry",
+            "internet dryer",
+            "smart appliance"
+        ],
+        "priority": 1,
+        "description": "Network-enabled drying appliance"
+    },
+    "smart_iron": {
+        "id": "smart_iron",
+        "canonical": "Smart Iron",
+        "entity_type": "devices",
+        "aliases": [
+            "connected iron",
+            "smart steam iron",
+            "internet iron",
+            "smart appliance"
+        ],
+        "priority": 1,
+        "description": "Network-enabled ironing appliance"
+    },
+    "smart_vacuum": {
+        "id": "smart_vacuum",
+        "canonical": "Smart Vacuum",
+        "entity_type": "devices",
+        "aliases": [
+            "connected vacuum",
+            "smart robot vacuum",
+            "internet vacuum",
+            "smart appliance"
+        ],
+        "priority": 1,
+        "description": "Network-enabled cleaning robot"
+    },
+    "smart_robot": {
+        "id": "smart_robot",
+        "canonical": "Smart Robot",
+        "entity_type": "devices",
+        "aliases": [
+            "connected robot",
+            "autonomous robot",
+            "internet robot",
+            "smart machine"
+        ],
+        "priority": 1,
+        "description": "Network-enabled autonomous machine"
+    },
+    "smart_drone": {
+        "id": "smart_drone",
+        "canonical": "Smart Drone",
+        "entity_type": "devices",
+        "aliases": [
+            "connected drone",
+            "autonomous drone",
+            "internet drone",
+            "smart aircraft"
+        ],
+        "priority": 1,
+        "description": "Network-enabled flying robot"
+    },
+    "smart_projector": {
+        "id": "smart_projector",
+        "canonical": "Smart Projector",
+        "entity_type": "devices",
+        "aliases": [
+            "connected projector",
+            "internet projector",
+            "smart display",
+            "network projector"
+        ],
+        "priority": 1,
+        "description": "Network-enabled projection device"
+    },
+    "smart_soundbar": {
+        "id": "smart_soundbar",
+        "canonical": "Smart Soundbar",
+        "entity_type": "devices",
+        "aliases": [
+            "connected soundbar",
+            "internet soundbar",
+            "smart audio",
+            "network soundbar"
+        ],
+        "priority": 1,
+        "description": "Network-enabled audio system"
+    },
+    "smart_display": {
+        "id": "smart_display",
+        "canonical": "Smart Display",
+        "entity_type": "devices",
+        "aliases": [
+            "connected display",
+            "internet display",
+            "smart screen",
+            "network display"
+        ],
+        "priority": 1,
+        "description": "Network-enabled visual output device"
+    },
+    "smart_hub": {
+        "id": "smart_hub",
+        "canonical": "Smart Hub",
+        "entity_type": "devices",
+        "aliases": [
+            "connected hub",
+            "internet hub",
+            "smart network",
+            "network hub"
+        ],
+        "priority": 1,
+        "description": "Network-enabled central connection point"
+    },
+    "smart_controller": {
+        "id": "smart_controller",
+        "canonical": "Smart Controller",
+        "entity_type": "devices",
+        "aliases": [
+            "connected controller",
+            "internet controller",
+            "smart interface",
+            "network controller"
+        ],
+        "priority": 1,
+        "description": "Network-enabled control interface"
+    },
+    "smart_panel": {
+        "id": "smart_panel",
+        "canonical": "Smart Panel",
+        "entity_type": "devices",
+        "aliases": [
+            "connected panel",
+            "internet panel",
+            "smart interface",
+            "network panel"
+        ],
+        "priority": 1,
+        "description": "Network-enabled control interface"
+    },
+    "smart_module": {
+        "id": "smart_module",
+        "canonical": "Smart Module",
+        "entity_type": "devices",
+        "aliases": [
+            "connected module",
+            "internet module",
+            "smart component",
+            "network module"
+        ],
+        "priority": 1,
+        "description": "Network-enabled functional component"
+    },
+    "smart_gateway": {
+        "id": "smart_gateway",
+        "canonical": "Smart Gateway",
+        "entity_type": "devices",
+        "aliases": [
+            "connected gateway",
+            "internet gateway",
+            "smart network",
+            "network gateway"
+        ],
+        "priority": 1,
+        "description": "Network-enabled central connection point"
+    },
+    "smart_bridge": {
+        "id": "smart_bridge",
+        "canonical": "Smart Bridge",
+        "entity_type": "devices",
+        "aliases": [
+            "connected bridge",
+            "internet bridge",
+            "smart network",
+            "network bridge"
+        ],
+        "priority": 1,
+        "description": "Network-enabled connection intermediary"
+    },
+    "smart_repeater": {
+        "id": "smart_repeater",
+        "canonical": "Smart Repeater",
+        "entity_type": "devices",
+        "aliases": [
+            "connected repeater",
+            "internet repeater",
+            "smart network",
+            "network repeater"
+        ],
+        "priority": 1,
+        "description": "Network-enabled signal amplifier"
+    },
+    "smart_extender": {
+        "id": "smart_extender",
+        "canonical": "Smart Extender",
+        "entity_type": "devices",
+        "aliases": [
+            "connected extender",
+            "internet extender",
+            "smart network",
+            "network extender"
+        ],
+        "priority": 1,
+        "description": "Network-enabled signal booster"
+    },
+    "smart_amplifier": {
+        "id": "smart_amplifier",
+        "canonical": "Smart Amplifier",
+        "entity_type": "devices",
+        "aliases": [
+            "connected amplifier",
+            "internet amplifier",
+            "smart audio",
+            "network amplifier"
+        ],
+        "priority": 1,
+        "description": "Network-enabled sound enhancement device"
+    },
+    "smart_mixer": {
+        "id": "smart_mixer",
+        "canonical": "Smart Mixer",
+        "entity_type": "devices",
+        "aliases": [
+            "connected mixer",
+            "internet mixer",
+            "smart audio",
+            "network mixer"
+        ],
+        "priority": 1,
+        "description": "Network-enabled audio mixing device"
+    },
+    "smart_equalizer": {
+        "id": "smart_equalizer",
+        "canonical": "Smart Equalizer",
+        "entity_type": "devices",
+        "aliases": [
+            "connected equalizer",
+            "internet equalizer",
+            "smart audio",
+            "network equalizer"
+        ],
+        "priority": 1,
+        "description": "Network-enabled audio frequency adjustment device"
+    },
+    "smart_processor": {
+        "id": "smart_processor",
+        "canonical": "Smart Processor",
+        "entity_type": "devices",
+        "aliases": [
+            "connected processor",
+            "internet processor",
+            "smart computing",
+            "network processor"
+        ],
+        "priority": 1,
+        "description": "Network-enabled computing unit"
+    }
+}

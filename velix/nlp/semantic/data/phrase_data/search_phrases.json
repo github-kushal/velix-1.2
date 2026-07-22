@@ -1,0 +1,84 @@
+{
+    "search for": {
+        "canonical": "SEARCH_FOR",
+        "description": "Searches for a query.",
+        "category": "search",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "search"},
+            {"LOWER": "for"}
+        ],
+        "action": "SEARCH"
+    },
+
+    "find": {
+        "canonical": "FIND",
+        "description": "Finds requested information.",
+        "category": "find",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "find"}
+        ],
+        "action": "SEARCH"
+    },
+
+    "look for": {
+        "canonical": "LOOK_FOR",
+        "description": "Looks for something.",
+        "category": "look",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "look"},
+            {"LOWER": "for"}
+        ],
+        "action": "SEARCH"
+    },
+
+    "search online": {
+        "canonical": "SEARCH_ONLINE",
+        "description": "Searches the internet.",
+        "category": "search",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "search"},
+            {"LOWER": "online"}
+        ],
+        "action": "SEARCH"
+    },
+
+    "search google": {
+        "canonical": "SEARCH_GOOGLE",
+        "description": "Searches on Google.",
+        "category": "google",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "search"},
+            {"LOWER": "google"}
+        ],
+        "action": "SEARCH"
+    },
+
+    "search youtube": {
+        "canonical": "SEARCH_YOUTUBE",
+        "description": "Searches on YouTube.",
+        "category": "youtube",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "search"},
+            {"LOWER": "youtube"}
+        ],
+        "action": "SEARCH"
+    },
+
+    "search wikipedia": {
+        "canonical": "SEARCH_WIKIPEDIA",
+        "description": "Searches on Wikipedia.",
+        "category": "wikipedia",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "search"},
+            {"LOWER": "wikipedia"}
+        ],
+        "action": "SEARCH"
+    }
+}

@@ -1,0 +1,179 @@
+{
+    "home": {
+        "canonical": "Home",
+        "entity_type": "locations",
+        "aliases": [
+            "home",
+            "house",
+            "residence",
+            "domicile"
+        ],
+        "priority": 1,
+        "description": "Primary residence of an individual"
+    },
+    "office": {
+        "canonical": "Office",
+        "entity_type": "locations",
+        "aliases": [
+            "office",
+            "workplace",
+            "business location",
+            "workspace"
+        ],
+        "priority": 1,
+        "description": "Workplace for professionals"
+    },
+    "school": {
+        "canonical": "School",
+        "entity_type": "locations",
+        "aliases": [
+            "school",
+            "educational institution",
+            "learning center"
+        ],
+        "priority": 1,
+        "description": "Institution for education"
+    },
+    "park": {
+        "canonical": "Park",
+        "entity_type": "locations",
+        "aliases": [
+            "park",
+            "public garden",
+            "green space"
+        ],
+        "priority": 1,
+        "description": "Public outdoor area for recreation"
+    },
+    "library": {
+        "canonical": "Library",
+        "entity_type": "locations",
+        "aliases": [
+            "library",
+            "book repository",
+            "study center"
+        ],
+        "priority": 1,
+        "description": "Collection of books and resources"
+    },
+    "hospital": {
+        "canonical": "Hospital",
+        "entity_type": "locations",
+        "aliases": [
+            "hospital",
+            "medical center",
+            "health facility"
+        ],
+        "priority": 1,
+        "description": "Healthcare facility"
+    },
+    "supermarket": {
+        "canonical": "Supermarket",
+        "entity_type": "locations",
+        "aliases": [
+            "supermarket",
+            "grocery store",
+            "market"
+        ],
+        "priority": 1,
+        "description": "Retail store for groceries"
+    },
+    "mall": {
+        "canonical": "Mall",
+        "entity_type": "locations",
+        "aliases": [
+            "mall",
+            "shopping center",
+            "retail complex"
+        ],
+        "priority": 1,
+        "description": "Commercial complex with stores"
+    },
+    "airport": {
+        "canonical": "Airport",
+        "entity_type": "locations",
+        "aliases": [
+            "airport",
+            "airfield",
+            "air terminal"
+        ],
+        "priority": 1,
+        "description": "Facility for air travel"
+    },
+    "train_station": {
+        "canonical": "Train Station",
+        "entity_type": "locations",
+        "aliases": [
+            "train station",
+            "railway station",
+            "station"
+        ],
+        "priority": 1,
+        "description": "Railway facility for trains"
+    },
+    "bus_stop": {
+        "canonical": "Bus Stop",
+        "entity_type": "locations",
+        "aliases": [
+            "bus stop",
+            "public transport stop"
+        ],
+        "priority": 1,
+        "description": "Location for bus services"
+    },
+    "coffee_shop": {
+        "canonical": "Coffee Shop",
+        "entity_type": "locations",
+        "aliases": [
+            "coffee shop",
+            "cafe",
+            "coffeehouse"
+        ],
+        "priority": 1,
+        "description": "Place serving coffee and snacks"
+    },
+    "restaurant": {
+        "canonical": "Restaurant",
+        "entity_type": "locations",
+        "aliases": [
+            "restaurant",
+            "eatery",
+            "dining place"
+        ],
+        "priority": 1,
+        "description": "Establishment for meals"
+    },
+    "theater": {
+        "canonical": "Theater",
+        "entity_type": "locations",
+        "aliases": [
+            "theater",
+            "playhouse",
+            "cinema"
+        ],
+        "priority": 1,
+        "description": "Venue for performances"
+    },
+    "museum": {
+        "canonical": "Museum",
+        "entity_type": "locations",
+        "aliases": [
+            "museum",
+            "art gallery",
+            "history center"
+        ],
+        "priority": 1,
+        "description": "Collection of artifacts"
+    },
+    "gym": {
+        "canonical": "Gym",
+        "entity_type": "locations",
+        "aliases": [
+            "gym",
+            "fitness center",
+            "workout place"
+        ],
+        "priority": 1,
+        "description": "Facility for exercise"
+    }
+}

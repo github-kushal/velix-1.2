@@ -1,0 +1,77 @@
+{
+    "calculate": {
+        "canonical": "calculate",
+        "category": "CALCULATE",
+        "priority": 1,
+        "description": "calculate",
+        "pattern": [
+            {"LOWER": "calculate"}
+        ],
+        "action": "CALCULATE"
+    },
+    "convert units": {
+        "canonical": "convert units",
+        "category": "UNIT_CONVERSION",
+        "priority": 1,
+        "description": "convert units",
+        "pattern": [
+            {"LOWER": "convert"},
+            {"LOWER": "units"}
+        ],
+        "action": "CONVERT"
+    },
+    "translate": {
+        "canonical": "translate",
+        "category": "TRANSLATE",
+        "priority": 1,
+        "description": "translate",
+        "pattern": [
+            {"LOWER": "translate"}
+        ],
+        "action": "TRANSLATE"
+    },
+    "tell time": {
+        "canonical": "tell time",
+        "category": "GET_TIME",
+        "priority": 1,
+        "description": "tell time",
+        "pattern": [
+            {"LOWER": "tell"},
+            {"LOWER": "time"}
+        ],
+        "action": "GET"
+    },
+    "tell date": {
+        "canonical": "tell date",
+        "category": "GET_DATE",
+        "priority": 1,
+        "description": "tell date",
+        "pattern": [
+            {"LOWER": "tell"},
+            {"LOWER": "date"}
+        ],
+        "action": "GET"
+    },
+    "check weather": {
+        "canonical": "check weather",
+        "category": "GET_WEATHER",
+        "priority": 1,
+        "description": "check weather",
+        "pattern": [
+            {"LOWER": "check"},
+            {"LOWER": "weather"}
+        ],
+        "action": "CHECK"
+    },
+    "show weather": {
+        "canonical": "show weather",
+        "category": "GET_WEATHER",
+        "priority": 1,
+        "description": "show weather",
+        "pattern": [
+            {"LOWER": "show"},
+            {"LOWER": "weather"}
+        ],
+        "action": "SHOW"
+    }
+}

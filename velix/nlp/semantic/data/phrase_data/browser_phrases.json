@@ -1,0 +1,101 @@
+{
+    "open browser": {
+        "canonical": "OPEN_BROWSER",
+        "action": "OPEN",
+        "category": "Browser Actions",
+        "priority": 1,
+        "description": "OPEN_BROWSER",
+        "pattern": [
+            {"LOWER": "open"},
+            {"LOWER": "browser"}
+        ]
+    },
+    "close browser": {
+        "canonical": "CLOSE_BROWSER",
+        "action": "CLOSE",
+        "category": "Browser Actions",
+        "priority": 1,
+        "description": "CLOSE_BROWSER",
+        "pattern": [
+            {"LOWER": "close"},
+            {"LOWER": "browser"}
+        ]
+    },
+    "new tab": {
+        "canonical": "NEW_TAB",
+        "action": "CREATE",
+        "category": "Tab Management",
+        "priority": 1,
+        "description": "NEW_TAB",
+        "pattern": [
+            {"LOWER": "new"},
+            {"LOWER": "tab"}
+        ]
+    },
+    "close tab": {
+        "canonical": "CLOSE_TAB",
+        "action": "CLOSE",
+        "category": "Tab Management",
+        "priority": 1,
+        "description": "CLOSE_TAB",
+        "pattern": [
+            {"LOWER": "close"},
+            {"LOWER": "tab"}
+        ]
+    },
+    "new window": {
+        "canonical": "NEW_WINDOW",
+        "action": "CREATE",
+        "category": "Window Management",
+        "priority": 1,
+        "description": "NEW_WINDOW",
+        "pattern": [
+            {"LOWER": "new"},
+            {"LOWER": "window"}
+        ]
+    },
+    "close window": {
+        "canonical": "CLOSE_WINDOW",
+        "action": "CLOSE",
+        "category": "Window Management",
+        "priority": 1,
+        "description": "CLOSE_WINDOW",
+        "pattern": [
+            {"LOWER": "close"},
+            {"LOWER": "window"}
+        ]
+    },
+    "reload page": {
+        "canonical": "REFRESH_PAGE",
+        "action": "REFRESH",
+        "category": "Navigation",
+        "priority": 1,
+        "description": "REFRESH_PAGE",
+        "pattern": [
+            {"LOWER": "reload"},
+            {"LOWER": "page"}
+        ]
+    },
+    "refresh page": {
+        "canonical": "REFRESH_PAGE",
+        "action": "REFRESH",
+        "category": "Navigation",
+        "priority": 1,
+        "description": "REFRESH_PAGE",
+        "pattern": [
+            {"LOWER": "refresh"},
+            {"LOWER": "page"}
+        ]
+    },
+    "go back": {
+        "canonical": "GO_BACK",
+        "action": "GO",
+        "category": "Navigation",
+        "priority": 1,
+        "description": "GO_BACK",
+        "pattern": [
+            {"LOWER": "go"},
+            {"LOWER": "back"}
+        ]
+    }
+}

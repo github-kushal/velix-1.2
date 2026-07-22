@@ -14,12 +14,12 @@ class PhraseExtractor:
 
     def _load_patterns(self):
         try:
-            for files in Path("E:\\Velix-1.2\\velix\\nlp\\semantic\\data").rglob("*.json"):
+            for files in Path("E:\\Velix-1.2\\velix\\nlp\\semantic\\data\\").rglob("phrase_data\\*.json"):
                 with open(files, "r", encoding="utf-8") as file:
                     data = json.load(file)
 
                     for phrase, info in data.items():
-                        self.phrase_dict[phrase] = info["pattern"]
+                        self.phrase_dict[phrase] = info
                  
                     # for phrase_n_info in data:
 
@@ -42,9 +42,9 @@ class PhraseExtractor:
     def _build_matcher(self, nlp):
         try:
             matcher = Matcher(nlp.vocab)
-            for phrase, patterns in self.phrase_dict.items():
+            for phrase, info in self.phrase_dict.items():
                 # print(phrase, [patterns])
-                matcher.add(phrase, [patterns])
+                matcher.add(phrase, [info["pattern"]])
             # print(matcher)
 
             # matcher.add(
@@ -72,9 +72,16 @@ class PhraseExtractor:
         for match_id, start, end in matches:
             # print("loop started")
             span = doc[start:end]
+            phrase_id = doc.vocab.strings[match_id]
+            # print(f"\ninfo : {self.phrase_dict[phrase_id]}\n")
             matched = {
                 "text": span.text,
-                "canonical": self.phrase_dict[doc.vocab.strings[match_id]],
+                "canonical": self.phrase_dict[phrase_id]["canonical"],
+                "action" : self.phrase_dict[phrase_id]["action"],
+                "category" : self.phrase_dict[phrase_id]["category"],
+                "description": self.phrase_dict[phrase_id]["description"],
+                "pattern" : self.phrase_dict[phrase_id]["pattern"],
+                "priority" : self.phrase_dict[phrase_id]["priority"],
                 "start": start,
                 "end": end
             }
@@ -91,5 +98,5 @@ if __name__ == "__main__":
     # for tok in doc:
     #     print(f"Tokens : {tok.text}, lower : {tok.lower_}")
     pe = PhraseExtractor(nlp)
-    pe.extract(doc)
+    print(pe.extract(doc))
     

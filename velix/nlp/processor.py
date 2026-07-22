@@ -2,13 +2,11 @@ import spacy
 # from spell_checker import SpellChecker
 import os
 from NLPState import NLPState
-from velix.nlp.preprocessing.normalizer import TextPreProcessor as tpp
-from velix.nlp.preprocessing.tokenizer import tokenizer
-from velix.nlp.preprocessing.lemmatizer import lemmatizer
-from velix.nlp.preprocessing.lemmatizer import pos_tagger
-from velix.nlp.preprocessing.lemmatizer import ner
-from velix.nlp.correction.spell_checker import SpellChecker
-from velix.nlp.parsing.dependency_parser import dependency_parser
+from preprocessing.normalizer import TextPreProcessor as tpp
+from preprocessing.text_preprocessor import TextPreprocessor
+from correction.spell_checker import SpellChecker
+from parsing.dependency_parser import dependency_parser
+from semantic.semantic_analyzer import SemanticAnalyzer
 
 
 
@@ -20,6 +18,8 @@ class Process:
         
         self.nlp = spacy.load("en_core_web_trf")
         self.spell_checker = SpellChecker()
+        self.semantic_analyzer = SemanticAnalyzer(self.nlp)
+        self.pre_processor = TextPreprocessor(self.nlp)
 
     def process(self, user_input):
         """
@@ -31,6 +31,8 @@ class Process:
 
         norm_text = tpp(user_input)
         state.normalized_text = norm_text.preprocess()
+        # print(type(state.normalized_text))
+        # print(state.normalized_text)
 
         #------------------Spell Check-----------------------
 
@@ -41,11 +43,17 @@ class Process:
 
         doc = self.nlp(state.corrected_text)
 
-        state.tokens = tokenizer(doc)
-        state.lemmas = lemmatizer(doc)
-        state.pos_tags = pos_tagger(doc)
-        state.entities = ner(doc)
+        preprocessed  = self.pre_processor.preprocess(doc)
+        state.tokens = preprocessed.tokens
+        state.lemmas = preprocessed.lemmas
         state.dependencies = dependency_parser(doc)
+
+        #------------------Symantic Analysis----------------------
+
+        analyse = self.semantic_analyzer.analyze(doc)
+        print(analyse)
 
         return state
         
+processor = Process()
+processor.process("Open Chrome and search YouTube for Lo-fi music")

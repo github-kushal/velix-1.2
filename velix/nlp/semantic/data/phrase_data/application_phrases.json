@@ -1,0 +1,177 @@
+{
+    "open application": {
+        "canonical": "OPEN_APPLICATION",
+        "action": "OPEN",
+        "category": "APPLICATION",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "open"},
+            {"LOWER": "application"}
+        ]
+    },
+    "launch application": {
+        "canonical": "LAUNCH_APPLICATION",
+        "action": "OPEN",
+        "category": "APPLICATION",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "launch"},
+            {"LOWER": "application"}
+        ]
+    },
+    "close application": {
+        "canonical": "CLOSE_APPLICATION",
+        "action": "CLOSE",
+        "category": "APPLICATION",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "close"},
+            {"LOWER": "application"}
+        ]
+    },
+    "minimize application": {
+        "canonical": "MINIMIZE_APPLICATION",
+        "action": "MINIMIZE",
+        "category": "APPLICATION",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "minimize"},
+            {"LOWER": "application"}
+        ]
+    },
+    "maximize application": {
+        "canonical": "MAXIMIZE_APPLICATION",
+        "action": "MAXIMIZE",
+        "category": "APPLICATION",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "maximize"},
+            {"LOWER": "application"}
+        ]
+    },
+    "restore application": {
+        "canonical": "RESTORE_APPLICATION",
+        "action": "RESTORE",
+        "category": "APPLICATION",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "restore"},
+            {"LOWER": "application"}
+        ]
+    },
+    "switch application": {
+        "canonical": "SWITCH_APPLICATION",
+        "action": "SWITCH",
+        "category": "APPLICATION",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "switch"},
+            {"LOWER": "application"}
+        ]
+    },
+    "quit application": {
+        "canonical": "QUIT_APPLICATION",
+        "action": "QUIT",
+        "category": "APPLICATION",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "quit"},
+            {"LOWER": "application"}
+        ]
+    },
+    "force quit application": {
+        "canonical": "FORCE_QUIT_APPLICATION",
+        "action": "FORCE_QUIT",
+        "category": "APPLICATION",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "force"},
+            {"LOWER": "quit"},
+            {"LOWER": "application"}
+        ]
+    },
+    "reopen application": {
+        "canonical": "REOPEN_APPLICATION",
+        "action": "REOPEN",
+        "category": "APPLICATION",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "reopen"},
+            {"LOWER": "application"}
+        ]
+    },
+    "hide application": {
+        "canonical": "HIDE_APPLICATION",
+        "action": "HIDE",
+        "category": "APPLICATION",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "hide"},
+            {"LOWER": "application"}
+        ]
+    },
+    "unhide application": {
+        "canonical": "UNHIDE_APPLICATION",
+        "action": "UNHIDE",
+        "category": "APPLICATION",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "unhide"},
+            {"LOWER": "application"}
+        ]
+    },
+    "bring application to front": {
+        "canonical": "BRING_APPLICATION_TO_FRONT",
+        "action": "BRING",
+        "category": "APPLICATION",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "bring"},
+            {"LOWER": "application"},
+            {"LOWER": "to"},
+            {"LOWER": "front"}
+        ]
+    },
+    "move application to background": {
+        "canonical": "MOVE_APPLICATION_TO_BACKGROUND",
+        "action": "MOVE",
+        "category": "APPLICATION",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "move"},
+            {"LOWER": "application"},
+            {"LOWER": "to"},
+            {"LOWER": "background"}
+        ]
+    },
+    "application settings": {
+        "canonical": "APPLICATION_SETTINGS",
+        "action": "SET",
+        "category": "APPLICATION",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "application"},
+            {"LOWER": "settings"}
+        ]
+    },
+    "application preferences": {
+        "canonical": "APPLICATION_PREFERENCES",
+        "action": "SET",
+        "category": "APPLICATION",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "application"},
+            {"LOWER": "preferences"}
+        ]
+    },
+    "application options": {
+        "canonical": "APPLICATION_OPTIONS",
+        "action": "SET",
+        "category": "APPLICATION",
+        "priority": 1,
+        "pattern": [
+            {"LOWER": "application"},
+            {"LOWER": "options"}
+        ]
+    }
+}

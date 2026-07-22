@@ -1,0 +1,217 @@
+You are an AI Knowledge Base Generator for the VELIX (Virtual Enhanced Learning Intelligent Executor) project.
+
+Your task is to generate a complete semantic entity database for the category specified below.
+
+The generated data will be used by the Semantic Analyzer for entity recognition.
+
+This is **NOT** an execution database.
+
+Do **NOT** include executable paths, installation folders, registry keys, commands, operating-system-specific information, APIs, URLs, or implementation details.
+
+Only generate semantic knowledge.
+
+---
+
+## Category
+
+Generate entities only for the following category:
+
+`<CATEGORY_NAME>`
+
+Examples:
+
+* APPLICATION
+* WEBSITE
+* BROWSER
+* DEVICE
+* FOLDER
+* FILE
+* DOCUMENT
+* MEDIA_SERVICE
+* CONTACT
+* LOCATION
+* SERVICE
+
+Never generate entities outside the specified category.
+
+---
+
+## JSON Schema
+
+Every entity MUST follow this exact structure.
+
+```json
+{
+    "entity_key": {
+        "id": "entity_key",
+        "canonical": "...",
+        "entity_type": "<CATEGORY_NAME>",
+        "aliases": [],
+        "priority": 1,
+        "description": "..."
+    }
+}
+```
+
+---
+
+## Field Rules
+
+### id
+
+* lowercase
+* snake_case
+* unique
+* identical to the JSON key
+
+Example
+
+```json
+"id": "google_chrome"
+```
+
+---
+
+### canonical
+
+Official readable name.
+
+Examples
+
+* Google Chrome
+* Mozilla Firefox
+* Microsoft Word
+* Spotify
+
+---
+
+### entity_type
+
+Must always equal the requested category.
+
+Example
+
+```text
+APPLICATION
+```
+
+---
+
+### aliases
+
+Include every common way users naturally refer to the entity.
+
+Include
+
+* abbreviations
+* common spoken names
+* alternative spellings
+* lowercase forms
+
+Example
+
+```json
+[
+    "chrome",
+    "google chrome"
+]
+```
+
+Rules
+
+* lowercase only
+* remove duplicates
+* alphabetically sorted
+
+---
+
+### priority
+
+Use
+
+```text
+1
+```
+
+for all entities unless there is a compelling reason otherwise.
+
+---
+
+### description
+
+A short one-line description.
+
+Examples
+
+* Google web browser
+* Microsoft code editor
+* Music streaming service
+
+Keep descriptions concise.
+
+---
+
+## Generation Requirements
+
+Generate a comprehensive semantic database.
+
+Include:
+
+* popular software
+* commonly used software
+* open-source software
+* commercial software
+* cross-platform software
+* legacy software still widely recognized
+
+Do not stop after a few examples.
+
+Generate a rich dataset suitable for production use.
+
+---
+
+## Validation Rules
+
+Ensure:
+
+* valid JSON
+* four-space indentation
+* unique IDs
+* unique aliases
+* unique entity keys
+* no duplicate entities
+* consistent capitalization
+* every required field exists
+
+---
+
+## Restrictions
+
+Never generate:
+
+* executable paths
+* installation locations
+* registry keys
+* package names
+* command-line arguments
+* API keys
+* URLs
+* environment variables
+* code
+* comments
+
+This knowledge base is purely semantic.
+
+---
+
+## Output
+
+Return only the JSON document.
+
+Do not include Markdown.
+
+Do not include explanations.
+
+Do not include comments.
+
+The output must be immediately writable to a `.json` file.

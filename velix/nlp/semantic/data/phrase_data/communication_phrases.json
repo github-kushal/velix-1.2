@@ -1,0 +1,90 @@
+{
+    "send email": {
+        "canonical": "SEND_EMAIL",
+        "action": "SEND",
+        "category": "email",
+        "priority": 1,
+        "description": "send email",
+        "pattern": [
+            {"LOWER": "send"},
+            {"LOWER": "email"}
+        ]
+    },
+    "read email": {
+        "canonical": "READ_EMAIL",
+        "action": "READ",
+        "category": "email",
+        "priority": 1,
+        "description": "read email",
+        "pattern": [
+            {"LOWER": "read"},
+            {"LOWER": "email"}
+        ]
+    },
+    "compose email": {
+        "canonical": "COMPOSE_EMAIL",
+        "action": "CREATE",
+        "category": "email",
+        "priority": 1,
+        "description": "compose email",
+        "pattern": [
+            {"LOWER": "compose"},
+            {"LOWER": "email"}
+        ]
+    },
+    "send message": {
+        "canonical": "SEND_MESSAGE",
+        "action": "SEND",
+        "category": "message",
+        "priority": 1,
+        "description": "send message",
+        "pattern": [
+            {"LOWER": "send"},
+            {"LOWER": "message"}
+        ]
+    },
+    "reply message": {
+        "canonical": "REPLY_MESSAGE",
+        "action": "REPLY",
+        "category": "message",
+        "priority": 1,
+        "description": "reply message",
+        "pattern": [
+            {"LOWER": "reply"},
+            {"LOWER": "message"}
+        ]
+    },
+    "make call": {
+        "canonical": "MAKE_CALL",
+        "action": "CALL",
+        "category": "call",
+        "priority": 1,
+        "description": "make call",
+        "pattern": [
+            {"LOWER": "make"},
+            {"LOWER": "call"}
+        ]
+    },
+    "answer call": {
+        "canonical": "ANSWER_CALL",
+        "action": "ANSWER",
+        "category": "call",
+        "priority": 1,
+        "description": "answer call",
+        "pattern": [
+            {"LOWER": "answer"},
+            {"LOWER": "call"}
+        ]
+    },
+    "reject call": {
+        "canonical": "REJECT_CALL",
+        "action": "REJECT",
+        "category": "call",
+        "priority": 1,
+        "description": "reject call",
+        "pattern": [
+            {"LOWER": "reject"},
+            {"LOWER": "call"}
+        ]
+    }
+}

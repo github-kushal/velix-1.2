@@ -55,8 +55,8 @@ class TextPreProcessor:
         print(self.text)
         return self.text
 
-txt="I Can’t Believe he won’t be able to Make it to the Party Tonight."
-tpp = TextPreProcessor(txt)
-tpp.preprocess()
+# txt="I Can’t Believe he won’t be able to Make it to the Party Tonight."
+# tpp = TextPreProcessor(txt)
+# tpp.preprocess()
 # tpp = tpp.normalizer()
 # print(tpp)

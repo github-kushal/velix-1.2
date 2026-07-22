@@ -1,0 +1,277 @@
+{
+    "pandora": {
+        "canonical": "Pandora",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "pandora",
+            "music streaming",
+            "radio service"
+        ],
+        "priority": 1,
+        "description": "Personalized music streaming service"
+    },
+    "tunein": {
+        "canonical": "TuneIn",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "tunein",
+            "radio streaming",
+            "online radio"
+        ],
+        "priority": 1,
+        "description": "Internet radio and live radio platform"
+    },
+    "radio_com": {
+        "canonical": "Radio.com",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "radio com",
+            "radio streaming",
+            "online radio"
+        ],
+        "priority": 1,
+        "description": "Live radio and on-demand audio platform"
+    },
+    "podcast_addict": {
+        "canonical": "Podcast Addict",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "podcast addict",
+            "podcast player",
+            "audio downloader"
+        ],
+        "priority": 1,
+        "description": "Podcast discovery and playback application"
+    },
+    "blender": {
+        "canonical": "Blender",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "blender",
+            "3d modeling",
+            "multimedia tool"
+        ],
+        "priority": 1,
+        "description": "Open-source 3D creation and multimedia tool"
+    },
+    "avid_media_composer": {
+        "canonical": "Avid Media Composer",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "avid media composer",
+            "media composer",
+            "video editing"
+        ],
+        "priority": 1,
+        "description": "Professional video editing and compositing software"
+    },
+    "final_cut_pro": {
+        "canonical": "Final Cut Pro",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "final cut pro",
+            "mac video editor",
+            "video editing"
+        ],
+        "priority": 1,
+        "description": "Professional video editing software for macOS"
+    },
+    "imovie": {
+        "canonical": "iMovie",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "imovie",
+            "apple video editor",
+            "video editor"
+        ],
+        "priority": 1,
+        "description": "User-friendly video editing application"
+    },
+    "windows_media_player": {
+        "canonical": "Windows Media Player",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "windows media player",
+            "wmplayer",
+            "media player"
+        ],
+        "priority": 1,
+        "description": "Media playback and management application"
+    },
+    "realplayer": {
+        "canonical": "RealPlayer",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "realplayer",
+            "media player",
+            "video player"
+        ],
+        "priority": 1,
+        "description": "Multimedia playback and streaming application"
+    },
+    "mp3_skype_recorder": {
+        "canonical": "MP3 Skype Recorder",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "mp3 skype recorder",
+            "audio recorder",
+            "skype audio"
+        ],
+        "priority": 1,
+        "description": "Audio recording tool for Skype calls"
+    },
+    "audirvana": {
+        "canonical": "Audirvana",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "audirvana",
+            "audio player",
+            "high fidelity"
+        ],
+        "priority": 1,
+        "description": "High-fidelity audio playback application"
+    },
+    "foobar2000": {
+        "canonical": "Foobar2000",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "foobar2000",
+            "audio player",
+            "music player"
+        ],
+        "priority": 1,
+        "description": "High-quality audio playback and management tool"
+    },
+    "winamp": {
+        "canonical": "Winamp",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "winamp",
+            "media player",
+            "audio player"
+        ],
+        "priority": 1,
+        "description": "Popular media playback and management application"
+    },
+    "mediamonkey": {
+        "canonical": "MediaMonkey",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "mediamonkey",
+            "media manager",
+            "music library"
+        ],
+        "priority": 1,
+        "description": "Media management and playback application"
+    },
+    "google_play_music": {
+        "canonical": "Google Play Music",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "google play music",
+            "music streaming",
+            "google music"
+        ],
+        "priority": 1,
+        "description": "Music and podcast streaming service"
+    },
+    "amazon_music": {
+        "canonical": "Amazon Music",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "amazon music",
+            "music streaming",
+            "amazon audio"
+        ],
+        "priority": 1,
+        "description": "Music and audio content service"
+    },
+    "soundhound": {
+        "canonical": "SoundHound",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "soundhound",
+            "music recognition",
+            "song identifier"
+        ],
+        "priority": 1,
+        "description": "Music recognition and search application"
+    },
+    "shazam": {
+        "canonical": "Shazam",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "shazam",
+            "song identifier",
+            "music recognition"
+        ],
+        "priority": 1,
+        "description": "Music recognition and identification service"
+    },
+    "musicbee": {
+        "canonical": "MusicBee",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "musicbee",
+            "music player",
+            "audio library"
+        ],
+        "priority": 1,
+        "description": "Media playback and library management application"
+    },
+    "napster": {
+        "canonical": "Napster",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "napster",
+            "music streaming",
+            "digital music"
+        ],
+        "priority": 1,
+        "description": "Music and audio content service"
+    },
+    "twitch": {
+        "canonical": "Twitch",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "twitch",
+            "live streaming",
+            "video streaming"
+        ],
+        "priority": 1,
+        "description": "Live video streaming platform"
+    },
+    "discord": {
+        "canonical": "Discord",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "discord",
+            "voice chat",
+            "video chat"
+        ],
+        "priority": 1,
+        "description": "Voice and video communication platform"
+    },
+    "zoom": {
+        "canonical": "Zoom",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "zoom",
+            "video conferencing",
+            "online meeting"
+        ],
+        "priority": 1,
+        "description": "Video conferencing and screen sharing application"
+    },
+    "microsoft_teams": {
+        "canonical": "Microsoft Teams",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "microsoft teams",
+            "team collaboration",
+            "video meetings"
+        ],
+        "priority": 1,
+        "description": "Unified communication and collaboration platform"
+    }
+}

@@ -1,0 +1,212 @@
+{
+    "desktop": {
+        "canonical": "Desktop",
+        "entity_type": "folders",
+        "aliases": [
+            "desktop",
+            "desktop folder"
+        ],
+        "priority": 1,
+        "description": "Main user workspace area"
+    },
+    "downloads": {
+        "canonical": "Downloads",
+        "entity_type": "folders",
+        "aliases": [
+            "downloads",
+            "download folder",
+            "downloads folder"
+        ],
+        "priority": 1,
+        "description": "Default location for downloaded files"
+    },
+    "documents": {
+        "canonical": "Documents",
+        "entity_type": "folders",
+        "aliases": [
+            "documents",
+            "document folder",
+            "papers"
+        ],
+        "priority": 1,
+        "description": "Standard location for text files"
+    },
+    "pictures": {
+        "canonical": "Pictures",
+        "entity_type": "folders",
+        "aliases": [
+            "pictures",
+            "image folder",
+            "photos"
+        ],
+        "priority": 1,
+        "description": "Default folder for image files"
+    },
+    "videos": {
+        "canonical": "Videos",
+        "entity_type": "folders",
+        "aliases": [
+            "videos",
+            "video folder",
+            "movie collection"
+        ],
+        "priority": 1,
+        "description": "Standard location for video files"
+    },
+    "music": {
+        "canonical": "Music",
+        "entity_type": "folders",
+        "aliases": [
+            "music",
+            "audio folder",
+            "sound files"
+        ],
+        "priority": 1,
+        "description": "Default folder for audio files"
+    },
+    "templates": {
+        "canonical": "Templates",
+        "entity_type": "folders",
+        "aliases": [
+            "templates",
+            "template folder",
+            "sample files"
+        ],
+        "priority": 1,
+        "description": "Storage for document templates"
+    },
+    "public": {
+        "canonical": "Public",
+        "entity_type": "folders",
+        "aliases": [
+            "public",
+            "shared folder",
+            "shared files"
+        ],
+        "priority": 1,
+        "description": "Shared access directory"
+    },
+    "system": {
+        "canonical": "System",
+        "entity_type": "folders",
+        "aliases": [
+            "system",
+            "system folder",
+            "os files"
+        ],
+        "priority": 1,
+        "description": "Operating system configuration files"
+    },
+    "user": {
+        "canonical": "User",
+        "entity_type": "folders",
+        "aliases": [
+            "user",
+            "user folder",
+            "personal files"
+        ],
+        "priority": 1,
+        "description": "User-specific data storage"
+    },
+    "home": {
+        "canonical": "Home",
+        "entity_type": "folders",
+        "aliases": [
+            "home",
+            "home folder",
+            "personal directory"
+        ],
+        "priority": 1,
+        "description": "Primary user directory"
+    },
+    "downloads_folder": {
+        "canonical": "Downloads Folder",
+        "entity_type": "folders",
+        "aliases": [
+            "downloads folder",
+            "download directory"
+        ],
+        "priority": 1,
+        "description": "Alternative name for download directory"
+    },
+    "document_folder": {
+        "canonical": "Document Folder",
+        "entity_type": "folders",
+        "aliases": [
+            "document folder",
+            "file storage"
+        ],
+        "priority": 1,
+        "description": "Alternative name for document storage"
+    },
+    "image_folder": {
+        "canonical": "Image Folder",
+        "entity_type": "folders",
+        "aliases": [
+            "image folder",
+            "picture collection"
+        ],
+        "priority": 1,
+        "description": "Alternative name for image storage"
+    },
+    "video_folder": {
+        "canonical": "Video Folder",
+        "entity_type": "folders",
+        "aliases": [
+            "video folder",
+            "movie collection"
+        ],
+        "priority": 1,
+        "description": "Alternative name for video storage"
+    },
+    "audio_folder": {
+        "canonical": "Audio Folder",
+        "entity_type": "folders",
+        "aliases": [
+            "audio folder",
+            "sound collection"
+        ],
+        "priority": 1,
+        "description": "Alternative name for audio storage"
+    },
+    "template_folder": {
+        "canonical": "Template Folder",
+        "entity_type": "folders",
+        "aliases": [
+            "template folder",
+            "sample directory"
+        ],
+        "priority": 1,
+        "description": "Alternative name for template storage"
+    },
+    "shared_folder": {
+        "canonical": "Shared Folder",
+        "entity_type": "folders",
+        "aliases": [
+            "shared folder",
+            "collaboration directory"
+        ],
+        "priority": 1,
+        "description": "Folder for shared access"
+    },
+    "personal_folder": {
+        "canonical": "Personal Folder",
+        "entity_type": "folders",
+        "aliases": [
+            "personal folder",
+            "private directory"
+        ],
+        "priority": 1,
+        "description": "User-specific storage location"
+    },
+    "file_storage": {
+        "canonical": "File Storage",
+        "entity_type": "folders",
+        "aliases": [
+            "file storage",
+            "data directory"
+        ],
+        "priority": 1,
+        "description": "General-purpose storage location"
+    }
+}

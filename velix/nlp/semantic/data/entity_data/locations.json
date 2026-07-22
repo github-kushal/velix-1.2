@@ -1,0 +1,276 @@
+{
+    "home": {
+        "id": "home",
+        "canonical": "Home",
+        "entity_type": "locations",
+        "aliases": [
+            "home",
+            "house",
+            "residence",
+            "domicile"
+        ],
+        "priority": 1,
+        "description": "Primary residence of an individual"
+    },
+    "office": {
+        "id": "office",
+        "canonical": "Office",
+        "entity_type": "locations",
+        "aliases": [
+            "office",
+            "workplace",
+            "business location",
+            "workspace"
+        ],
+        "priority": 1,
+        "description": "Workplace for professionals"
+    },
+    "school": {
+        "id": "school",
+        "canonical": "School",
+        "entity_type": "locations",
+        "aliases": [
+            "school",
+            "educational institution",
+            "learning center"
+        ],
+        "priority": 1,
+        "description": "Institution for education"
+    },
+    "park": {
+        "id": "park",
+        "canonical": "Park",
+        "entity_type": "locations",
+        "aliases": [
+            "park",
+            "public garden",
+            "green space"
+        ],
+        "priority": 1,
+        "description": "Public outdoor area for recreation"
+    },
+    "library": {
+        "id": "library",
+        "canonical": "Library",
+        "entity_type": "locations",
+        "aliases": [
+            "library",
+            "book repository",
+            "study center"
+        ],
+        "priority": 1,
+        "description": "Collection of books and resources"
+    },
+    "hospital": {
+        "id": "hospital",
+        "canonical": "Hospital",
+        "entity_type": "locations",
+        "aliases": [
+            "hospital",
+            "medical center",
+            "health facility"
+        ],
+        "priority": 1,
+        "description": "Healthcare facility"
+    },
+    "supermarket": {
+        "id": "supermarket",
+        "canonical": "Supermarket",
+        "entity_type": "locations",
+        "aliases": [
+            "supermarket",
+            "grocery store",
+            "market",
+            "hypermarket"
+        ],
+        "priority": 1,
+        "description": "Retail store for groceries"
+    },
+    "mall": {
+        "id": "mall",
+        "canonical": "Mall",
+        "entity_type": "locations",
+        "aliases": [
+            "mall",
+            "shopping center",
+            "retail complex"
+        ],
+        "priority": 1,
+        "description": "Commercial complex with stores"
+    },
+    "airport": {
+        "id": "airport",
+        "canonical": "Airport",
+        "entity_type": "locations",
+        "aliases": [
+            "airport",
+            "airfield",
+            "air terminal"
+        ],
+        "priority": 1,
+        "description": "Facility for air travel"
+    },
+    "train_station": {
+        "id": "train_station",
+        "canonical": "Train Station",
+        "entity_type": "locations",
+        "aliases": [
+            "train station",
+            "railway station",
+            "station"
+        ],
+        "priority": 1,
+        "description": "Railway facility for trains"
+    },
+    "bus_stop": {
+        "id": "bus_stop",
+        "canonical": "Bus Stop",
+        "entity_type": "locations",
+        "aliases": [
+            "bus stop",
+            "public transport stop"
+        ],
+        "priority": 1,
+        "description": "Location for bus services"
+    },
+    "coffee_shop": {
+        "id": "coffee_shop",
+        "canonical": "Coffee Shop",
+        "entity_type": "locations",
+        "aliases": [
+            "coffee shop",
+            "cafe",
+            "coffeehouse"
+        ],
+        "priority": 1,
+        "description": "Place serving coffee and snacks"
+    },
+    "restaurant": {
+        "id": "restaurant",
+        "canonical": "Restaurant",
+        "entity_type": "locations",
+        "aliases": [
+            "restaurant",
+            "eatery",
+            "dining place"
+        ],
+        "priority": 1,
+        "description": "Establishment for meals"
+    },
+    "theater": {
+        "id": "theater",
+        "canonical": "Theater",
+        "entity_type": "locations",
+        "aliases": [
+            "theater",
+            "playhouse",
+            "cinema"
+        ],
+        "priority": 1,
+        "description": "Venue for performances"
+    },
+    "museum": {
+        "id": "museum",
+        "canonical": "Museum",
+        "entity_type": "locations",
+        "aliases": [
+            "museum",
+            "art gallery",
+            "history center"
+        ],
+        "priority": 1,
+        "description": "Collection of artifacts"
+    },
+    "gym": {
+        "id": "gym",
+        "canonical": "Gym",
+        "entity_type": "locations",
+        "aliases": [
+            "gym",
+            "fitness center",
+            "workout place"
+        ],
+        "priority": 1,
+        "description": "Facility for exercise"
+    },
+    "university": {
+        "id": "university",
+        "canonical": "University",
+        "entity_type": "locations",
+        "aliases": [
+            "university",
+            "univ",
+            "campus"
+        ],
+        "priority": 1,
+        "description": "Institution for higher education"
+    },
+    "hotel": {
+        "id": "hotel",
+        "canonical": "Hotel",
+        "entity_type": "locations",
+        "aliases": [
+            "hotel",
+            "lodging",
+            "accommodation"
+        ],
+        "priority": 1,
+        "description": "Accommodation facility"
+    },
+    "clinic": {
+        "id": "clinic",
+        "canonical": "Clinic",
+        "entity_type": "locations",
+        "aliases": [
+            "clinic",
+            "medical clinic",
+            "health center"
+        ],
+        "priority": 1,
+        "description": "Healthcare facility for minor treatments"
+    },
+    "pharmacy": {
+        "id": "pharmacy",
+        "canonical": "Pharmacy",
+        "entity_type": "locations",
+        "aliases": [
+            "pharmacy",
+            "drugstore"
+        ],
+        "priority": 1,
+        "description": "Retail store for medications"
+    },
+    "bank": {
+        "id": "bank",
+        "canonical": "Bank",
+        "entity_type": "locations",
+        "aliases": [
+            "bank",
+            "financial institution"
+        ],
+        "priority": 1,
+        "description": "Financial services institution"
+    },
+    "post_office": {
+        "id": "post_office",
+        "canonical": "Post Office",
+        "entity_type": "locations",
+        "aliases": [
+            "post office",
+            "mail office"
+        ],
+        "priority": 1,
+        "description": "Facility for postal services"
+    },
+    "gas_station": {
+        "id": "gas_station",
+        "canonical": "Gas Station",
+        "entity_type": "locations",
+        "aliases": [
+            "gas station",
+            "fuel station"
+        ],
+        "priority": 1,
+        "description": "Facility for vehicle fueling"
+    }
+}

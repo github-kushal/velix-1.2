@@ -33,7 +33,7 @@ class LLMClient:
                 "temperature": temperature,
                 "num_gpu": 0,
                 "num_thread": 12,
-                "num_ctx" : 12288,
+                "num_ctx" : 16329,
             },
         )
 

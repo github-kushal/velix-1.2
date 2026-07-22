@@ -1,0 +1,353 @@
+{
+    "OPEN": {
+        "aliases": [
+            "open",
+            "launch",
+            "start",
+            "run",
+            "execute",
+            "boot",
+            "fire up",
+            "bring up",
+            "load",
+            "access"
+        ],
+        "description": "Open or launch an application, file, website, or service.",
+        "requires_target": true,
+        "priority": 1
+    },
+    "CLOSE": {
+        "aliases": [
+            "close",
+            "exit",
+            "quit",
+            "terminate",
+            "stop",
+            "end",
+            "dismiss"
+        ],
+        "description": "Close an application, file, or window.",
+        "requires_target": true,
+        "priority": 2
+    },
+    "SEARCH": {
+        "aliases": [
+            "search",
+            "find",
+            "lookup",
+            "look for",
+            "locate",
+            "discover",
+            "browse"
+        ],
+        "description": "Search for information.",
+        "requires_target": true,
+        "priority": 2
+    },
+    "CREATE": {
+        "aliases": [
+            "create",
+            "make",
+            "generate",
+            "build",
+            "produce",
+            "compose"
+        ],
+        "description": "Create a new resource.",
+        "requires_target": true,
+        "priority": 3
+    },
+    "DELETE": {
+        "aliases": [
+            "delete",
+            "remove",
+            "erase",
+            "discard",
+            "destroy",
+            "clear"
+        ],
+        "description": "Delete an existing resource.",
+        "requires_target": true,
+        "priority": 3
+    },
+    "COPY": {
+        "aliases": [
+            "copy",
+            "duplicate",
+            "clone"
+        ],
+        "description": "Copy a resource.",
+        "requires_target": true,
+        "priority": 4
+    },
+    "MOVE": {
+        "aliases": [
+            "move",
+            "transfer",
+            "relocate",
+            "shift"
+        ],
+        "description": "Move a resource.",
+        "requires_target": true,
+        "priority": 4
+    },
+    "RENAME": {
+        "aliases": [
+            "rename",
+            "change name",
+            "retitle"
+        ],
+        "description": "Rename a resource.",
+        "requires_target": true,
+        "priority": 5
+    },
+    "DOWNLOAD": {
+        "aliases": [
+            "download",
+            "fetch",
+            "get"
+        ],
+        "description": "Download a file.",
+        "requires_target": true,
+        "priority": 5
+    },
+    "UPLOAD": {
+        "aliases": [
+            "upload",
+            "send",
+            "push"
+        ],
+        "description": "Upload a file.",
+        "requires_target": true,
+        "priority": 5
+    },
+    "PLAY": {
+        "aliases": [
+            "play",
+            "start playing",
+            "resume",
+            "listen to",
+            "watch"
+        ],
+        "description": "Play media.",
+        "requires_target": true,
+        "priority": 5
+    },
+    "PAUSE": {
+        "aliases": [
+            "pause",
+            "hold"
+        ],
+        "description": "Pause media.",
+        "requires_target": false,
+        "priority": 6
+    },
+    "STOP": {
+        "aliases": [
+            "stop",
+            "halt",
+            "end"
+        ],
+        "description": "Stop a running process or media.",
+        "requires_target": false,
+        "priority": 6
+    },
+    "NEXT": {
+        "aliases": [
+            "next",
+            "skip",
+            "forward"
+        ],
+        "description": "Go to the next item.",
+        "requires_target": false,
+        "priority": 6
+    },
+    "PREVIOUS": {
+        "aliases": [
+            "previous",
+            "back",
+            "last"
+        ],
+        "description": "Go to the previous item.",
+        "requires_target": false,
+        "priority": 6
+    },
+    "INCREASE": {
+        "aliases": [
+            "increase",
+            "raise",
+            "boost",
+            "turn up"
+        ],
+        "description": "Increase a value.",
+        "requires_target": true,
+        "priority": 7
+    },
+    "DECREASE": {
+        "aliases": [
+            "decrease",
+            "reduce",
+            "lower",
+            "turn down"
+        ],
+        "description": "Decrease a value.",
+        "requires_target": true,
+        "priority": 7
+    },
+    "ENABLE": {
+        "aliases": [
+            "enable",
+            "activate",
+            "turn on"
+        ],
+        "description": "Enable a feature.",
+        "requires_target": true,
+        "priority": 7
+    },
+    "DISABLE": {
+        "aliases": [
+            "disable",
+            "deactivate",
+            "turn off"
+        ],
+        "description": "Disable a feature.",
+        "requires_target": true,
+        "priority": 7
+    },
+    "LOCK": {
+        "aliases": [
+            "lock",
+            "secure"
+        ],
+        "description": "Lock a device or account.",
+        "requires_target": true,
+        "priority": 8
+    },
+    "UNLOCK": {
+        "aliases": [
+            "unlock",
+            "open"
+        ],
+        "description": "Unlock a device or account.",
+        "requires_target": true,
+        "priority": 8
+    },
+    "LOGIN": {
+        "aliases": [
+            "login",
+            "log in",
+            "sign in",
+            "authenticate"
+        ],
+        "description": "Log into an account.",
+        "requires_target": false,
+        "priority": 8
+    },
+    "LOGOUT": {
+        "aliases": [
+            "logout",
+            "log out",
+            "sign out"
+        ],
+        "description": "Log out from an account.",
+        "requires_target": false,
+        "priority": 8
+    },
+    "SAVE": {
+        "aliases": [
+            "save",
+            "store",
+            "write"
+        ],
+        "description": "Save changes.",
+        "requires_target": true,
+        "priority": 9
+    },
+    "PRINT": {
+        "aliases": [
+            "print"
+        ],
+        "description": "Print a document.",
+        "requires_target": true,
+        "priority": 9
+    },
+    "SHARE": {
+        "aliases": [
+            "share",
+            "send to"
+        ],
+        "description": "Share a resource.",
+        "requires_target": true,
+        "priority": 9
+    },
+    "EMAIL": {
+        "aliases": [
+            "email",
+            "mail"
+        ],
+        "description": "Send an email.",
+        "requires_target": true,
+        "priority": 9
+    },
+    "CALL": {
+        "aliases": [
+            "call",
+            "dial",
+            "ring"
+        ],
+        "description": "Place a phone call.",
+        "requires_target": true,
+        "priority": 9
+    },
+    "MESSAGE": {
+        "aliases": [
+            "message",
+            "text",
+            "sms"
+        ],
+        "description": "Send a message.",
+        "requires_target": true,
+        "priority": 9
+    },
+    "REMIND": {
+        "aliases": [
+            "remind",
+            "remember",
+            "notify"
+        ],
+        "description": "Create a reminder.",
+        "requires_target": true,
+        "priority": 10
+    },
+    "SCHEDULE": {
+        "aliases": [
+            "schedule",
+            "plan",
+            "book",
+            "arrange"
+        ],
+        "description": "Schedule an event.",
+        "requires_target": true,
+        "priority": 10
+    },
+    "CALCULATE": {
+        "aliases": [
+            "calculate",
+            "compute",
+            "evaluate",
+            "solve"
+        ],
+        "description": "Perform a calculation.",
+        "requires_target": true,
+        "priority": 10
+    },
+    "TRANSLATE": {
+        "aliases": [
+            "translate",
+            "convert language"
+        ],
+        "description": "Translate text.",
+        "requires_target": true,
+        "priority": 10
+    }
+}

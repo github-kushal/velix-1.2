@@ -1,0 +1,222 @@
+{
+    "spotify": {
+        "canonical": "Spotify",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "spotify",
+            "spotify music",
+            "spotify streaming"
+        ],
+        "priority": 1,
+        "description": "Music and podcast streaming service"
+    },
+    "youtube": {
+        "canonical": "YouTube",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "youtube",
+            "youtube videos",
+            "youtube channel"
+        ],
+        "priority": 1,
+        "description": "Video sharing platform"
+    },
+    "vlc": {
+        "canonical": "VLC Media Player",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "vlc",
+            "vlc media player",
+            "video lan client"
+        ],
+        "priority": 1,
+        "description": "Cross-platform media player"
+    },
+    "netflix": {
+        "canonical": "Netflix",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "netflix",
+            "netflix streaming",
+            "netflix movies"
+        ],
+        "priority": 1,
+        "description": "Video streaming service"
+    },
+    "hulu": {
+        "canonical": "Hulu",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "hulu",
+            "hulu streaming",
+            "hulu tv"
+        ],
+        "priority": 1,
+        "description": "Entertainment streaming service"
+    },
+    "apple_podcasts": {
+        "canonical": "Apple Podcasts",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "apple podcasts",
+            "podcast app",
+            "itunes podcasts"
+        ],
+        "priority": 1,
+        "description": "Podcast directory and player"
+    },
+    "audacity": {
+        "canonical": "Audacity",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "audacity",
+            "audio editor",
+            "open source audio editor"
+        ],
+        "priority": 1,
+        "description": "Open-source audio editing software"
+    },
+    "adobe_audition": {
+        "canonical": "Adobe Audition",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "adobe audition",
+            "audition",
+            "audio editor"
+        ],
+        "priority": 1,
+        "description": "Professional audio editing software"
+    },
+    "adobe_premiere_pro": {
+        "canonical": "Adobe Premiere Pro",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "adobe premiere pro",
+            "premiere pro",
+            "video editor"
+        ],
+        "priority": 1,
+        "description": "Professional video editing software"
+    },
+    "davinci_resolve": {
+        "canonical": "DaVinci Resolve",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "davinci resolve",
+            "resolve",
+            "video editing software"
+        ],
+        "priority": 1,
+        "description": "Professional video editing and color grading software"
+    },
+    "itunes": {
+        "canonical": "iTunes",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "itunes",
+            "apple music",
+            "media library"
+        ],
+        "priority": 1,
+        "description": "Media management and playback application"
+    },
+    "tiktok": {
+        "canonical": "TikTok",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "tiktok",
+            "tik tok",
+            "short videos"
+        ],
+        "priority": 1,
+        "description": "Social media platform for short-form video"
+    },
+    "instagram": {
+        "canonical": "Instagram",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "instagram",
+            "ig",
+            "social media"
+        ],
+        "priority": 1,
+        "description": "Photo and video sharing platform"
+    },
+    "facebook": {
+        "canonical": "Facebook",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "facebook",
+            "fb",
+            "facebook reels"
+        ],
+        "priority": 1,
+        "description": "Social media platform with video content"
+    },
+    "soundcloud": {
+        "canonical": "SoundCloud",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "soundcloud",
+            "music sharing",
+            "audio platform"
+        ],
+        "priority": 1,
+        "description": "Audio and music sharing platform"
+    },
+    "bandcamp": {
+        "canonical": "Bandcamp",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "bandcamp",
+            "music distribution",
+            "independent music"
+        ],
+        "priority": 1,
+        "description": "Music and art distribution platform"
+    },
+    "mixcloud": {
+        "canonical": "MixCloud",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "mixcloud",
+            "music mix",
+            "audio sharing"
+        ],
+        "priority": 1,
+        "description": "Music mix and audio sharing platform"
+    },
+    "spotify_podcasts": {
+        "canonical": "Spotify Podcasts",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "spotify podcasts",
+            "podcast directory",
+            "audio content"
+        ],
+        "priority": 1,
+        "description": "Podcast discovery and playback service"
+    },
+    "youtube_music": {
+        "canonical": "YouTube Music",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "youtube music",
+            "music streaming",
+            "youtube audio"
+        ],
+        "priority": 1,
+        "description": "Music and audio content platform"
+    },
+    "apple_music": {
+        "canonical": "Apple Music",
+        "entity_type": "MEDIA",
+        "aliases": [
+            "apple music",
+            "music streaming",
+            "itunes music"
+        ],
+        "priority": 1,
+        "description": "Music and audio content service"
+    }
+}

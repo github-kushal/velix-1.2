@@ -5,6 +5,7 @@ from dataclasses import dataclass
 class ActionMatch:
     action: str
     matched_text: str
+    priority : int
     confidence: float
 
 class ActionExtractor:
@@ -14,14 +15,14 @@ class ActionExtractor:
         self.alias_map = {}
 
         self._load_action_data()
-        print(self.action_data)
+        # print(self.action_data)
         self._build_alias_map()
-        print(self.alias_map)
+        # print(self.alias_map)
 
 
     def _load_action_data(self):
         try:
-            with open("data\\action_aliases.json", "r") as f:
+            with open("E:\\Velix-1.2\\velix\\nlp\\semantic\\data\\action_data\\action_aliases.json", "r") as f:
                 data = json.load(f)
                 self.action_data.update(data)
 
@@ -38,19 +39,23 @@ class ActionExtractor:
             raise e
         
     def extract(self, phrase_matches):
+        # print(f"\nMatches : {phrase_matches}\n")
 
         extracted_actions = []
 
         for phrase in phrase_matches:
             canonical = phrase["canonical"]
-            action = self.alias_map.get(canonical)
-            if action is None:
-                continue
+            # print("Canonical:", canonical)
+            # print(type(canonical))
+            # action = self.alias_map.get(canonical)
+            # if action is None:
+            #     continue
             # info = self.action_data[action]
 
             match = ActionMatch(
-                action=action,
+                action=canonical,
                 matched_text=phrase["text"],
+                priority=phrase["priority"],
                 confidence=1.0
             )
 

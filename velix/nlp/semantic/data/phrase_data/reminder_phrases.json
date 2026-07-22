@@ -1,0 +1,46 @@
+{
+    "set reminder": {
+        "canonical": "set reminder",
+        "category": "reminder",
+        "priority": 1,
+        "description": "CREATE_REMINDER",
+        "pattern": [
+            {"LOWER": "set"},
+            {"LOWER": "reminder"}
+        ],
+        "action": "SET"
+    },
+    "remove reminder": {
+        "canonical": "remove reminder",
+        "category": "reminder",
+        "priority": 1,
+        "description": "DELETE_REMINDER",
+        "pattern": [
+            {"LOWER": "remove"},
+            {"LOWER": "reminder"}
+        ],
+        "action": "REMOVE"
+    },
+    "show reminders": {
+        "canonical": "show reminders",
+        "category": "reminder",
+        "priority": 1,
+        "description": "SHOW_REMINDERS",
+        "pattern": [
+            {"LOWER": "show"},
+            {"LOWER": "reminders"}
+        ],
+        "action": "SHOW"
+    },
+    "edit reminder": {
+        "canonical": "edit reminder",
+        "category": "reminder",
+        "priority": 1,
+        "description": "EDIT_REMINDER",
+        "pattern": [
+            {"LOWER": "edit"},
+            {"LOWER": "reminder"}
+        ],
+        "action": "EDIT"
+    }
+}

@@ -1,0 +1,112 @@
+{
+    "play music": {
+        "canonical": "PLAY_MUSIC",
+        "action": "PLAY",
+        "category": "music control",
+        "priority": 1,
+        "description": "Open the default browser",
+        "pattern": [
+            {"LOWER": "play"},
+            {"LOWER": "music"}
+        ]
+    },
+    "pause music": {
+        "canonical": "PAUSE_MUSIC",
+        "action": "PAUSE",
+        "category": "music control",
+        "priority": 1,
+        "description": "Open the default browser",
+        "pattern": [
+            {"LOWER": "pause"},
+            {"LOWER": "music"}
+        ]
+    },
+    "resume music": {
+        "canonical": "RESUME_MUSIC",
+        "action": "RESUME",
+        "category": "music control",
+        "priority": 1,
+        "description": "Open the default browser",
+        "pattern": [
+            {"LOWER": "resume"},
+            {"LOWER": "music"}
+        ]
+    },
+    "stop music": {
+        "canonical": "STOP_MUSIC",
+        "action": "STOP",
+        "category": "music control",
+        "priority": 1,
+        "description": "Open the default browser",
+        "pattern": [
+            {"LOWER": "stop"},
+            {"LOWER": "music"}
+        ]
+    },
+    "next song": {
+        "canonical": "NEXT_TRACK",
+        "action": "NEXT",
+        "category": "music control",
+        "priority": 1,
+        "description": "Open the default browser",
+        "pattern": [
+            {"LOWER": "next"},
+            {"LOWER": "song"}
+        ]
+    },
+    "previous song": {
+        "canonical": "PREVIOUS_TRACK",
+        "action": "PREVIOUS",
+        "category": "music control",
+        "priority": 1,
+        "description": "Open the default browser",
+        "pattern": [
+            {"LOWER": "previous"},
+            {"LOWER": "song"}
+        ]
+    },
+    "increase volume": {
+        "canonical": "VOLUME_UP",
+        "action": "ADJUST_VOLUME",
+        "category": "music control",
+        "priority": 1,
+        "description": "Open the default browser",
+        "pattern": [
+            {"LOWER": "increase"},
+            {"LOWER": "volume"}
+        ]
+    },
+    "decrease volume": {
+        "canonical": "VOLUME_DOWN",
+        "action": "ADJUST_VOLUME",
+        "category": "music control",
+        "priority": 1,
+        "description": "Open the default browser",
+        "pattern": [
+            {"LOWER": "decrease"},
+            {"LOWER": "volume"}
+        ]
+    },
+    "mute audio": {
+        "canonical": "MUTE_AUDIO",
+        "action": "MUTE",
+        "category": "music control",
+        "priority": 1,
+        "description": "Open the default browser",
+        "pattern": [
+            {"LOWER": "mute"},
+            {"LOWER": "audio"}
+        ]
+    },
+    "unmute audio": {
+        "canonical": "UNMUTE_AUDIO",
+        "action": "UNMUTE",
+        "category": "music control",
+        "priority": 1,
+        "description": "Open the default browser",
+        "pattern": [
+            {"LOWER": "unmute"},
+            {"LOWER": "audio"}
+        ]
+    }
+}

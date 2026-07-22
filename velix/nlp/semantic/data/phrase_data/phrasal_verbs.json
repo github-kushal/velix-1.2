@@ -1,0 +1,152 @@
+{
+  "TURN_ON": {
+    "canonical": "TURN_ON",
+    "category": "generic",
+    "priority": 100,
+    "description": "Enables or powers on a target.",
+    "pattern": [
+      {"LOWER": "turn"}, {"LOWER": "on"},
+      {"LOWER": "switch"}, {"LOWER": "on"},
+      {"LOWER": "power"}, {"LOWER": "on"},
+      {"LOWER": "enable"}
+    ],
+    "action": "TURN"
+  },
+  "TURN_OFF": {
+    "canonical": "TURN_OFF",
+    "category": "generic",
+    "priority": 100,
+    "description": "Disables or powers off a target.",
+    "pattern": [
+      {"LOWER": "turn"}, {"LOWER": "off"},
+      {"LOWER": "switch"}, {"LOWER": "off"},
+      {"LOWER": "power"}, {"LOWER": "off"},
+      {"LOWER": "disable"}
+    ],
+    "action": "TURN"
+  },
+  "LOG_IN": {
+    "canonical": "LOG_IN",
+    "category": "generic",
+    "priority": 95,
+    "description": "Authenticate into an account.",
+    "pattern": [
+      {"LOWER": "log"}, {"LOWER": "in"},
+      {"LOWER": "sign"}, {"LOWER": "in"},
+      {"LOWER": "login"}
+    ],
+    "action": "LOG_IN"
+  },
+  "LOG_OUT": {
+    "canonical": "LOG_OUT",
+    "category": "generic",
+    "priority": 95,
+    "description": "Terminate an active session.",
+    "pattern": [
+      {"LOWER": "log"}, {"LOWER": "out"},
+      {"LOWER": "sign"}, {"LOWER": "out"}
+    ],
+    "action": "LOG_OUT"
+  },
+  "SCROLL_UP": {
+    "canonical": "SCROLL_UP",
+    "category": "browser",
+    "priority": 80,
+    "description": "Moves the view upward.",
+    "pattern": [
+      {"LOWER": "scroll"}, {"LOWER": "up"},
+      {"LOWER": "move"}, {"LOWER": "up"}
+    ],
+    "action": "SCROLL"
+  },
+  "SCROLL_DOWN": {
+    "canonical": "SCROLL_DOWN",
+    "category": "browser",
+    "priority": 80,
+    "description": "Moves the view downward.",
+    "pattern": [
+      {"LOWER": "scroll"}, {"LOWER": "down"},
+      {"LOWER": "move"}, {"LOWER": "down"}
+    ],
+    "action": "SCROLL"
+  },
+  "GO_BACK": {
+    "canonical": "GO_BACK",
+    "category": "browser",
+    "priority": 90,
+    "description": "Navigates to the previous page.",
+    "pattern": [
+      {"LOWER": "go"}, {"LOWER": "back"},
+      {"LOWER": "back"}
+    ],
+    "action": "GO"
+  },
+  "GO_FORWARD": {
+    "canonical": "GO_FORWARD",
+    "category": "browser",
+    "priority": 90,
+    "description": "Navigates to the next page.",
+    "pattern": [
+      {"LOWER": "go"}, {"LOWER": "forward"},
+      {"LOWER": "forward"}
+    ],
+    "action": "GO"
+  },
+  "BRING_UP": {
+    "canonical": "BRING_UP",
+    "category": "generic",
+    "priority": 80,
+    "description": "Displays a requested interface.",
+    "pattern": [
+      {"LOWER": "bring"}, {"LOWER": "up"},
+      {"LOWER": "open"},
+      {"LOWER": "display"}
+    ],
+    "action": "BRING"
+  },
+  "CARRY_OUT": {
+    "canonical": "CARRY_OUT",
+    "category": "generic",
+    "priority": 75,
+    "description": "Executes a task or command.",
+    "pattern": [
+      {"LOWER": "carry"}, {"LOWER": "out"},
+      {"LOWER": "execute"},
+      {"LOWER": "perform"}
+    ],
+    "action": "CARRY"
+  },
+  "CALL_OFF": {
+    "canonical": "CALL_OFF",
+    "category": "generic",
+    "priority": 80,
+    "description": "Cancels an ongoing or scheduled action.",
+    "pattern": [
+      {"LOWER": "call"}, {"LOWER": "off"},
+      {"LOWER": "cancel"},
+      {"LOWER": "abort"},
+      {"LOWER": "stop"}
+    ],
+    "action": "CANCEL"
+  },
+  "FIND": {
+    "canonical": "FIND",
+    "category": "generic",
+    "priority": 80,
+    "description": "Locates specific content.",
+    "pattern": [
+      {"LOWER": "find"}
+    ],
+    "action": "FIND"
+  },
+  "SEARCH": {
+    "canonical": "SEARCH",
+    "category": "generic",
+    "priority": 80,
+    "description": "Locates specific content.",
+    "pattern": [
+      {"LOWER": "search"}
+    ],
+    "action": "SEARCH"
+  }
+}
