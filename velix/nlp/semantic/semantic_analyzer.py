@@ -1,9 +1,8 @@
 from dataclasses import dataclass, field
-from typing import List
 
-from .phrase_extractor import PhraseExtractor
 from .action_extractor import ActionExtractor
 from .entity_extractor import EntityExtractor
+from .phrase_extractor import PhraseExtractor
 
 
 @dataclass

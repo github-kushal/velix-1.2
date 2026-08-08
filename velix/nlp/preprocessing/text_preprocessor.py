@@ -5,7 +5,7 @@ Handles all preprocessing before semantic analysis.
 """
 
 from dataclasses import dataclass
-from typing import List
+
 
 from .tokenizer import tokenizer
 from .lemmatizer import lemmatizer
@@ -18,13 +18,13 @@ class PreprocessedText:
 
     doc: object
 
-    tokens: List[str]
+    tokens: list[str]
 
-    lemmas: List[str]
+    lemmas: list[str]
 
-    pos_tags: List
+    pos_tags: list
 
-    named_entities: List
+    named_entities: list
 
 
 class TextPreprocessor:

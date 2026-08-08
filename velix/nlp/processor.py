@@ -1,13 +1,12 @@
-import spacy
 # from spell_checker import SpellChecker
-import os
+
+import spacy
+from correction.spell_checker import SpellChecker
 from NLPState import NLPState
+from parsing.dependency_parser import dependency_parser
 from preprocessing.normalizer import TextPreProcessor as tpp
 from preprocessing.text_preprocessor import TextPreprocessor
-from correction.spell_checker import SpellChecker
-from parsing.dependency_parser import dependency_parser
 from semantic.semantic_analyzer import SemanticAnalyzer
-
 
 
 class Process:
@@ -47,13 +46,17 @@ class Process:
         state.tokens = preprocessed.tokens
         state.lemmas = preprocessed.lemmas
         state.dependencies = dependency_parser(doc)
+        state.named_entities = preprocessed.named_entities
 
         #------------------Symantic Analysis----------------------
 
         analyse = self.semantic_analyzer.analyze(doc)
-        print(analyse)
+        state.entities = analyse.entities
+        state.intent_confidence = analyse.confidence
+        state.actions = analyse.actions
+        print(f"Deps : {state.dependencies}\n\nnamed_ents {state.named_entities}\n\nents : {state.entities}")
 
         return state
         
 processor = Process()
-processor.process("Open Chrome and search YouTube for Lo-fi music")
+processor.process("Search for lo-fi music on youtube")

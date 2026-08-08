@@ -1,0 +1,31 @@
+from enum import Enum
+
+class ParameterType(Enum):
+    TEXT = ""
+    NUMBER = "number"
+    BOOLEAN = "boolean"
+    DATE = "date"
+    TIME = "time"
+    DATETIME = "datetime"
+    DURATION = "duration"
+    PATH = "path"
+    FILENAME = "filename"
+    DIRECTORY = "directory"
+    URL = "url"
+    EMAIL = "email"
+    PHONE_NUMBER = "phone_number"
+    PERSON = "person"
+    ORGANIZATION = "organization"
+    LOCATION = "location"
+    APPLICATION = "application"
+    DEVICE = "device"
+    FILE = "file"
+    FOLDER = "folder"
+    LANGUAGE = "language"
+    CURRENCY = "currency"
+    PERCENTAGE = "percentage"
+    IDENTIFIER = "identifier"
+    CODE = "code"
+    UNKNOWN = "unknown"
+
+    

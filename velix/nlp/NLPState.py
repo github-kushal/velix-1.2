@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from typing import Optional, Any
+from typing import Any, Optional
 
 
 @dataclass
@@ -14,6 +14,7 @@ class NLPState:
     # ==========================
     normalized_text: str = ""
     corrected_text: str = ""
+    named_entities: dict[str, Any] = field(default_factory=dict)
 
     # ==========================
     # Token Processing
@@ -35,6 +36,7 @@ class NLPState:
     intent: Optional[str] = None
     intent_confidence: float = 0.0
     entities: dict[str, Any] = field(default_factory=dict)
+    actions: list[tuple] = field(default_factory=list)
 
     # ==========================
     # Conversation Context
