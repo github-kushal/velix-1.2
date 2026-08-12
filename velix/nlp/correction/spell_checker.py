@@ -1,8 +1,9 @@
-import os
 import glob
-import json
 import importlib.resources as imp_res
+import json
+import os
 import re
+from datetime import datetime
 from pathlib import Path
 
 from symspellpy import SymSpell, Verbosity
@@ -22,6 +23,7 @@ class SpellChecker:
         )
 
         self._load_custom_dictionary()
+        print(f"Protected words : \n\n{self.protected_words}\n\n")
         self._load_symspell_dictionaries()
 
     # ------------------------------------------------------------------
@@ -154,7 +156,7 @@ class SpellChecker:
     # ------------------------------------------------------------------
 
     def _is_protected(self, word: str) -> bool:
-        return word.lower() in self.protected_words
+        return bool(word.lower() in self.protected_words)
 
     def _word_exists(self, word: str) -> bool:
         return word.lower() in self.sym_spell.words
@@ -214,3 +216,43 @@ class SpellChecker:
                 word.strip()
             )
         )
+
+    def _is_date(self, value: str) -> bool:
+        date_formats = [
+            "%Y-%m-%d",   # 2026-08-12
+            "%d/%m/%Y",   # 12/08/2026
+            "%m/%d/%Y",   # 08/12/2026
+            "%d-%m-%Y",   # 12-08-2026
+            "%m-%d-%Y",   # 08-12-2026
+        ]
+
+        value = value.strip()
+
+        for fmt in date_formats:
+            try:
+                datetime.strptime(value, fmt)
+                return True
+            except ValueError:
+                continue
+
+        return False
+
+
+    def _is_time(self, value: str) -> bool:
+        time_formats = [
+            "%H:%M",       # 17:30
+            "%H:%M:%S",    # 17:30:00
+            "%I:%M %p",    # 5:30 PM
+            "%I %p",       # 5 PM
+        ]
+
+        value = value.strip()
+
+        for fmt in time_formats:
+            try:
+                datetime.strptime(value, fmt)
+                return True
+            except ValueError:
+                continue
+
+        return False

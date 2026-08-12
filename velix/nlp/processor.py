@@ -54,9 +54,9 @@ class Process:
         state.entities = analyse.entities
         state.intent_confidence = analyse.confidence
         state.actions = analyse.actions
-        print(f"Deps : {state.dependencies}\n\nnamed_ents {state.named_entities}\n\nents : {state.entities}")
+        print(f"Tokens: {state.tokens}\n\nCorrect Text : {state.corrected_text}\n\nDeps : {state.dependencies}\n\nnamed_ents {state.named_entities}\n\nents : {state.entities}")
 
         return state
         
 processor = Process()
-processor.process("Search for lo-fi music on youtube")
+processor.process("Search for \"How to bake cookies\" on Google")

@@ -1,19 +1,24 @@
-{
-    "assistant_name": [
-        "velix"
-    ],
+[
+    "vx",
+    "velix",
+    "vscode",
+    "chrome",
+    "spotify",
+    "pop",
+    "rock",
+    "jazz",
+    "classical",
+    "hip hop",
+    "country",
+    "electronic dance",
+    "reggae",
+    "R&B",
+    "metal",
+    "morld",
+    "blues",
+    "funk",
+    "latin",
+    "folk",
+    "lo-fi"
+]
 
-    "nicknames": [
-        "vx"
-    ],
-
-    "projects": [
-        "velix"
-    ],
-
-    "frequent_apps": [
-        "vscode",
-        "chrome",
-        "spotify"
-    ]
-}

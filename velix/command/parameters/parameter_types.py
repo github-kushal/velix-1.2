@@ -1,5 +1,6 @@
 from enum import Enum
 
+
 class ParameterType(Enum):
     TEXT = ""
     NUMBER = "number"

@@ -1,5 +1,6 @@
 from enum import Enum
 
+
 class ParameterRole(Enum):
     TARGET = "target"
     SOURCE = "source"
