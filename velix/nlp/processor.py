@@ -1,12 +1,12 @@
 # from spell_checker import SpellChecker
 
 import spacy
-from correction.spell_checker import SpellChecker
-from NLPState import NLPState
-from parsing.dependency_parser import dependency_parser
-from preprocessing.normalizer import TextPreProcessor as tpp
-from preprocessing.text_preprocessor import TextPreprocessor
-from semantic.semantic_analyzer import SemanticAnalyzer
+from .correction.spell_checker import SpellChecker
+from .NLPState import NLPState
+from .parsing.dependency_parser import dependency_parser
+from .preprocessing.normalizer import TextPreProcessor as tpp
+from .preprocessing.text_preprocessor import TextPreprocessor
+from .semantic.semantic_analyzer import SemanticAnalyzer
 
 
 class Process:
@@ -30,8 +30,8 @@ class Process:
 
         norm_text = tpp(user_input)
         state.normalized_text = norm_text.preprocess()
-        # print(type(state.normalized_text))
-        # print(state.normalized_text)
+        # print(type(state.normalized_text)) 
+        # print(state.normalized_text) 
 
         #------------------Spell Check-----------------------
 
@@ -47,6 +47,7 @@ class Process:
         state.lemmas = preprocessed.lemmas
         state.dependencies = dependency_parser(doc)
         state.named_entities = preprocessed.named_entities
+        state.pos_tags = preprocessed.pos_tags
 
         #------------------Symantic Analysis----------------------
 
@@ -54,9 +55,11 @@ class Process:
         state.entities = analyse.entities
         state.intent_confidence = analyse.confidence
         state.actions = analyse.actions
-        print(f"Tokens: {state.tokens}\n\nCorrect Text : {state.corrected_text}\n\nDeps : {state.dependencies}\n\nnamed_ents {state.named_entities}\n\nents : {state.entities}")
+        # print(f"POS TAGS : {state.pos_tags}\n\nTokens: {state.tokens}\n\nCorrect Text : {state.corrected_text}\n\nDeps : {state.dependencies}\n\nnamed_ents {state.named_entities}\n\nents : {state.entities}")
 
         return state
-        
-processor = Process()
-processor.process("Search for \"How to bake cookies\" on Google")
+
+
+if __name__ == "__main__":
+    processor = Process()
+    processor.process("Search for Microsoft on YouTube")

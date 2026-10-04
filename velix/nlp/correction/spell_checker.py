@@ -1,7 +1,5 @@
-import glob
 import importlib.resources as imp_res
 import json
-import os
 import re
 from datetime import datetime
 from pathlib import Path
@@ -23,7 +21,7 @@ class SpellChecker:
         )
 
         self._load_custom_dictionary()
-        print(f"Protected words : \n\n{self.protected_words}\n\n")
+        # print(f"Protected words : \n\n{self.protected_words}\n\n")
         self._load_symspell_dictionaries()
 
     # ------------------------------------------------------------------
@@ -59,8 +57,8 @@ class SpellChecker:
 
             return word
 
-        except Exception as e:
-            raise e
+        except Exception as e:  # noqa: TRY203
+            raise e  # noqa: TRY201
 
     def correct_sentence(self, sentence: str) -> str:
         """
@@ -78,8 +76,8 @@ class SpellChecker:
 
             return " ".join(corrected_tokens)
 
-        except Exception as e:
-            raise e
+        except Exception as e:  # noqa: TRY203
+            raise e  # noqa: TRY201
 
     # ------------------------------------------------------------------
     # Private Methods
@@ -110,8 +108,8 @@ class SpellChecker:
                     for word in data
                 )
 
-        except Exception as e:
-            raise e
+        except Exception as e:  # noqa: TRY203
+            raise e  # noqa: TRY201
 
     def _load_symspell_dictionaries(self):
         """
@@ -148,8 +146,8 @@ class SpellChecker:
                     "Failed to load bigram dictionary."
                 )
 
-        except Exception as e:
-            raise e
+        except Exception as e:  # noqa: TRY203
+            raise e  # noqa: TRY201
 
     # ------------------------------------------------------------------
     # Validation Methods

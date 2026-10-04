@@ -29,7 +29,7 @@ class NLPState:
     # ==========================
     pos_tags: list[str] = field(default_factory=list)
     dependencies: list[tuple] = field(default_factory=list)
-
+ 
     # ==========================
     # Intent & Entities
     # ==========================

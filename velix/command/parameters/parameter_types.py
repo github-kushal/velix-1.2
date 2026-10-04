@@ -27,6 +27,7 @@ class ParameterType(Enum):
     PERCENTAGE = "percentage"
     IDENTIFIER = "identifier"
     CODE = "code"
+    AMOUNT = "amount"
     UNKNOWN = "unknown"
 
     

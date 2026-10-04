@@ -38,6 +38,11 @@ class PhraseExtractor:
         
         except ValueError as e:
             raise ValueError(f"Error loading patterns: {e}")
+
+        print("\nACTION PHRASES:")
+        for phrase, info in self.phrase_dict.items():
+            if info.get("category") == "action":
+                print(phrase, "->", info["canonical"], info["pattern"])
         
     def _build_matcher(self, nlp):
         try:
@@ -45,6 +50,8 @@ class PhraseExtractor:
             for phrase, info in self.phrase_dict.items():
                 # print(phrase, [patterns])
                 matcher.add(phrase, [info["pattern"]])
+                self.phrase_dict[phrase] = info
+                print(phrase, info["canonical"], info["pattern"])
             # print(matcher)
 
             # matcher.add(
@@ -68,6 +75,7 @@ class PhraseExtractor:
         # print("mathces: ",matches)
 
         result = []
+        
         
         for match_id, start, end in matches:
             # print("loop started")
@@ -94,9 +102,9 @@ class PhraseExtractor:
 if __name__ == "__main__":
     import spacy
     nlp = spacy.load("en_core_web_trf")
-    doc = nlp("create folder")
+    doc = nlp("search for lo-fi music on youtube")
     # for tok in doc:
     #     print(f"Tokens : {tok.text}, lower : {tok.lower_}")
     pe = PhraseExtractor(nlp)
-    print(pe.extract(doc))
+    # print(pe.extract(doc))
     

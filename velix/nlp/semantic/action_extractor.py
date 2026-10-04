@@ -66,3 +66,4 @@ class ActionExtractor:
         
 if __name__ == "__main__":
     ae = ActionExtractor()
+    print(ae.extract([{"canonical": "open", "text": "open chrome", "priority": 1}]))
